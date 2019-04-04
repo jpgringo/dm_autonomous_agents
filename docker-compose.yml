@@ -1,0 +1,19 @@
+version: "2"
+#networks:
+#  agents:
+#    driver: bridge
+services:
+  mothership:
+    container_name: "autonomous_mothership"
+    image: "erlang:latest"
+    #    expose:
+    #      - "9092"
+    #      - "2181"
+#    networks:
+#      - agents
+    #ports:
+      #- "9092:9092"
+      #- "2181:2181"
+    volumes:
+      - ./mothership:/app
+    command: escript /app/mothership.erl
