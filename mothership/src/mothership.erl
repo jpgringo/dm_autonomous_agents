@@ -22,7 +22,7 @@
 -export([createServer/1, extract_message/1,
   formatOscMessage/1, go/0, hello/0, sendThing/1,
   sendThing/2, sendThing/3, start_link/0]).
--export([runPitchMachine/0, pitch/1]).
+-export([runPitchMachine/0, runPitchMachine/1, pitch/2]).
 
 start_link() ->
   supervisor:start_link({local, base_automaton}, ?MODULE,
@@ -64,7 +64,7 @@ listen(Socket) ->
 createServer(Port) ->
   {ok, Socket} = gen_udp:open(Port,
     [binary, {active, false}]),
-  listen(Socket).
+  Pid = spawn(?MODULE, listen, [Socket]).
 
 sendThing(SocketId) -> sendThing(SocketId, 8980).
 
@@ -79,34 +79,44 @@ sendThing(SocketId, ToSocketId, Message) ->
   io:fwrite("FormattedMessage (~p): ~s~n", [byte_size(FormattedMessage), FormattedMessage]),
   gen_udp:close(Socket).
 
-pitch(PitchProcess) ->
+pitch(PitchProcess, Socket) ->
   PitchProcess ! {self(), {next, -1}},
   receive
     {From, {pitch, PitchValue}} ->
-      io:fwrite("new pitch received from ~w: ~p~n", [From, PitchValue]);
+      PitchString = list_to_binary(io_lib:format("~.6f", [PitchValue])), %io_lib:format("/pitch/"),
+      OscMsg = formatOscMessage(<<"/pitch/", PitchString/binary>>),
+      gen_udp:send(Socket, {127, 0, 0, 1}, getTargetPort(), OscMsg);
     _ ->
       io:fwrite("got _something_")
   end.
 
+defaultServerPort() ->
+  8981.
+
+getTargetPort() ->
+  %62603.
+  8980.
 
 runPitchMachine() ->
+  runPitchMachine(2000).
+
+runPitchMachine(Interval) ->
+  {ok, Socket} = gen_udp:open(defaultServerPort(), [binary, {active, false}]),
   Pid = spawn_link(automaton_test, pitch, []),
-  Timer = timer:apply_interval(2000, ?MODULE, pitch, [Pid]),
-  io:fwrite("Timer ~p~n", [Timer]),
-  io:fwrite("Pid:~w~n", [Pid])
-.
+  timer:apply_interval(Interval, ?MODULE, pitch, [Pid, Socket]).
 
 formatOscMessage(Msg, PadCount) ->
   if byte_size(Msg) rem 4 == 0 ->
-    <<Msg/binary, "\00\00\00\00,\00\00\00">>;
-    PadCount == 0 -> Msg;
+    <<Msg/binary, ",\00\00\00">>;
     true ->
-      io:fwrite("Msg (~p): ~s~n", [byte_size(Msg), Msg]),
       formatOscMessage(<<Msg/binary, 0>>, PadCount - 1)
   end.
 
 formatOscMessage(Msg) ->
   Len = byte_size(Msg),
-  PadCount = 4 - Len rem 4,
-  % io:fwrite("Msg (~p/~p): ~w~n", [Len, PadCount, Msg]),
-  formatOscMessage(Msg, PadCount).
+  if Len rem 4 == 0 ->
+    <<Msg/binary, "\00\00\00\00,\00\00\00">>;
+    true ->
+      PadCount = 4 - Len rem 4,
+      formatOscMessage(Msg, PadCount)
+  end.
