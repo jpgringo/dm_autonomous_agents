@@ -22,7 +22,7 @@
 -export([createServer/1, extract_message/1,
   formatOscMessage/1, go/0, hello/0, sendThing/1,
   sendThing/2, sendThing/3, start_link/0]).
--export([runPitchMachine/0, runPitchMachine/1, pitch/2]).
+-export([runPitchMachine/0, runPitchMachine/1, pitch/2, pitch/4]).
 
 start_link() ->
   supervisor:start_link({local, base_automaton}, ?MODULE,
@@ -80,12 +80,30 @@ sendThing(SocketId, ToSocketId, Message) ->
   gen_udp:close(Socket).
 
 pitch(PitchProcess, Socket) ->
-  PitchProcess ! {self(), {next, -1}},
+  PitchProcess ! {self(), {next}},
   receive
     {From, {pitch, PitchValue}} ->
       PitchString = list_to_binary(io_lib:format("~.6f", [PitchValue])), %io_lib:format("/pitch/"),
       OscMsg = formatOscMessage(<<"/pitch/", PitchString/binary>>),
       gen_udp:send(Socket, {127, 0, 0, 1}, getTargetPort(), OscMsg);
+    _ ->
+      io:fwrite("got _something_")
+  end.
+
+pitch(PitchProcess, Socket, Interval, RefPitch) ->
+  io:fwrite("calling pitch function: ~w, ~w, ~p, ~p~n", [PitchProcess, Socket, Interval, RefPitch]),
+  case RefPitch of
+    false ->
+      PitchProcess ! {self(), {next}};
+      Otherwise ->
+        PitchProcess ! {self(), {next, Otherwise}}
+  end,
+  receive
+    {From, {pitch, PitchValue}} ->
+      PitchString = list_to_binary(io_lib:format("~.6f", [PitchValue * 1.0])), %io_lib:format("/pitch/"),
+      OscMsg = formatOscMessage(<<"/pitch/", PitchString/binary>>),
+      gen_udp:send(Socket, {127, 0, 0, 1}, getTargetPort(), OscMsg),
+      timer:apply_after(Interval, ?MODULE, pitch, [PitchProcess, Socket, Interval, PitchValue]);
     _ ->
       io:fwrite("got _something_")
   end.
@@ -103,7 +121,10 @@ runPitchMachine() ->
 runPitchMachine(Interval) ->
   {ok, Socket} = gen_udp:open(defaultServerPort(), [binary, {active, false}]),
   Pid = spawn_link(automaton_test, pitch, []),
-  timer:apply_interval(Interval, ?MODULE, pitch, [Pid, Socket]).
+  io:fwrite("got this far~n"),
+  pitch(Pid, Socket, Interval, false).
+%%  timer:apply_interval(5, ?MODULE, pitch, [Pid, Socket, Interval, false]).
+%%  timer:apply_interval(Interval, ?MODULE, pitch, [Pid, Socket]).
 
 formatOscMessage(Msg, PadCount) ->
   if byte_size(Msg) rem 4 == 0 ->
