@@ -2,7 +2,7 @@
 	"name" : "autonomous_sound_module",
 	"version" : 1,
 	"creationdate" : 3637322700,
-	"modificationdate" : 3637322759,
+	"modificationdate" : 3637859552,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -15,6 +15,25 @@
 				"local" : 1,
 				"toplevel" : 1
 			}
+,
+			"arpeggiatio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"arpeggiationio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"spectral_thumper.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+
+		}
+,
+		"code" : 		{
 
 		}
 
