@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 369.0, 79.0, 1310.0, 897.0 ],
+		"rect" : [ -2052.0, 171.0, 1858.0, 1388.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,272 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "A simple stereo audio mixing module. ",
+					"args" : [ "@type", "geneic" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-59",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AudioMix.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 1438.0, 312.5, 69.0, 139.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1449.0, 305.5, 69.0, 139.0 ],
+					"varname" : "AudioMix[3]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "A stereo \"double-shelving\" EQ module.",
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-60",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AudioEQ.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 1438.0, 152.5, 69.0, 149.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1449.0, 145.5, 69.0, 149.0 ],
+					"varname" : "AudioEQ[3]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1438.0, 105.0, 126.0, 22.0 ],
+					"text" : "receive~ audio_bus_4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "A simple stereo audio mixing module. ",
+					"args" : [ "@type", "geneic" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-56",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AudioMix.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 1360.0, 312.5, 69.0, 139.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1367.0, 314.5, 69.0, 139.0 ],
+					"varname" : "AudioMix[2]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "A stereo \"double-shelving\" EQ module.",
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-57",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AudioEQ.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 1360.0, 152.5, 69.0, 149.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1367.0, 154.5, 69.0, 149.0 ],
+					"varname" : "AudioEQ[2]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1360.0, 77.0, 126.0, 22.0 ],
+					"text" : "receive~ audio_bus_3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "A simple stereo audio mixing module. ",
+					"args" : [ "@type", "geneic" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-52",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AudioMix.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 1278.0, 312.5, 69.0, 139.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1277.0, 309.5, 69.0, 139.0 ],
+					"varname" : "AudioMix[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "A stereo \"double-shelving\" EQ module.",
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-54",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AudioEQ.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 1278.0, 152.5, 69.0, 149.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1277.0, 149.5, 69.0, 149.0 ],
+					"varname" : "AudioEQ[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1278.0, 51.0, 126.0, 22.0 ],
+					"text" : "receive~ audio_bus_2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "A simple stereo audio mixing module. ",
+					"args" : [ "@type", "geneic" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-35",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AudioMix.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 1198.0, 312.5, 69.0, 139.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 95.0, 405.0, 69.0, 139.0 ],
+					"varname" : "AudioMix",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "A stereo \"double-shelving\" EQ module.",
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-36",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AudioEQ.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 1198.0, 152.5, 69.0, 149.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 95.0, 255.0, 69.0, 149.0 ],
+					"varname" : "AudioEQ",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "A stereo/dual mono audio input chooser.",
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-34",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AudioInput.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 931.0, 89.0, 69.0, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 80.0, 170.0, 69.0, 29.0 ],
+					"varname" : "AudioInput",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 313.0, 862.0, 130.0, 130.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"autosave" : 1,
 					"bgmode" : 0,
 					"border" : 0,
@@ -49,7 +315,7 @@
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-					"patching_rect" : [ 826.0, 337.0, 92.5, 22.0 ],
+					"patching_rect" : [ 658.0, 970.0, 92.5, 22.0 ],
 					"save" : [ "#N", "vst~", "loaduniqueid", 0, ";" ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -83,7 +349,7 @@
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "6733.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.WsEla0YVXiQWcxUlbTQVXzE1UyUmXzkGbkckckI2bo8laTQWdvUFVA0zWSQUPTUDUtEVakIQUHYFVOEAA7C..............dB....fPBO6L....A.........f..........L..........D.........PA.........X..........G..........B.........j..........J.........vB.........v..........M.........fC.........7..........P.........PD+.H......HwO.B......S7Cf.......E+.H......TA.........V.........vEACD......fA.........Y.........fF.........rA.........b.........PG.........3A.........e..........H.........DB.........h.........vH.AH......PB.........k.Df......fI.........bBP.B......n.........PJ.AH......nB.........qHjj.......KBYG......zhP9.......tDDx......vK..........iPHA......w.........fL.........LC.........zHDR......PM.........XiPHA......2Hzh.......NBgL......jSPHC......5.........vNBgD......vC.........8.........fO.........7iPHA.......A........PPBgD......HD.........CIjl.......QACD......TDPfB......FADP......vQ.AN......fD.........IELP......fR.AJ......rDP.A......LAD3......PS.........3jPHC......OA.........TCoO......DE.........RA........vT.........PE.........UA........fU.........bE.........XA........PVBiL......nE.........aIDx.......W.........zEP.C......dMjE......vW..........F.........gA........fXBgL......LF.........jMj9......PY.........XF.........mA.........Z.........jF.........pA........vZ.........vF.........sIDx......fa.........7lPHC......vA........Pb.AN......HWPvC......yA.........c.........TG.........1IDx......vc.........f2P5C......4A........fd.........rG.........7A........Pe.........3G.........+A.........f.........DnvHC......BB........vfBgD......PH.........EBDv......fgBQM......bH.........HB........Ph.........nnPHC......KB.........iCoO......zH.........NB........vi..........I.........QB........fj.........LI.........TB........PkBgL......XI.........WJDR.......l.........jIPfC......ZFD7......vl.........vI.........cB....fDMYTSx.A.RDVcsY1SQPAlunBPsUFcgofBAUGcn8lb5nvIUI2bffTYisVag4lafzBH00BZk4xXu01IJn.QkM2XxkFbzk1atoiBmPEZoMGHoMGHgABYuUmXrUFHPklamABTu41YfPVYrEVdt3hKMzvStUFHPAEQfj1bfXVXyQWYxARXtQFHlkFazUlbyAxcoQGZfDFHnk1YnAWXyMGKfPGZkAxazgVYxAxatUFHoMGHr81ckIGHg4FYfXVZrQWYxMGH2kFcnARXfv1a2AWXyMmKfbhBJT0bgcVY5nvIPUGcfbGZkIWY1UlbfDFHt8lbsEFafPVYrEVdfj1btcBcfTlauU2YnExIJnfJunfBiDTS8zjQMIiBiXUYxMWOx.CLvTiBiTjajkVXt0CaoQGcrUlBi3Va8DSMJLRay0iau4VYJLRay0SSuQ1UnwlBiz1b8.UZzMFZWovHsMWOBIWYgQGZJLRay0CVvIWYyMmBiz1b8bTXzUlBiz1b8rTY4YzarovHsMWOVUFauMVZzkmBiz1b8DDUuU2XnovHsMWOMMUQGEiBiz1b8zzTEcjLJLRay0CSl8VLJLRay0CSl8lLJLRay0CSl81LJLRay0CSl8FMJLha10SLJLRa10yQgQWYJLxXs0SagklaJLzXOAWO4biKyTiBiLVa8.0PuIWYJzTSTESOt8lakoSXyMWZm4VYjoPSMMUL8.iBM0DQwzCLt.CLJzTSVMUL8.iBM0jUDESOv3BLvnPSMQkL831atUlNgM2boclakQlBM0zTxzCLJzTSDISOv3BLvnPSMY0TxzCLJzTSVQjL8.iKv.iBM0DUyziau4VY5D1byk1YtUFYJzTSSMSOvnPSMQzL8.iKv.iBM0jUSMSOvnPSMYEQyzCLt.CLJzTSTQSOt8lakoSXyMWZm4VYjoPSMMEM8.iBM0DQzzCLt.CLJzTSVMEM8.iBM0jUDQSOv3BLvnvTBE1bk0CMJL0co41Y8.iKv.iBSQkbocVOwn.TS8lam0SMJ.kQuwFY8.iBPYTZrUVOwnvQFkFak0iLJbzTiEFak0CLJLDZLEVd8.iBSUmbx8TOwnfTkYWOyfSN3n.SEQTOv3BLvn.TAcTQ8.iBPE1YkM2St0CLJLzaxUlS8LiBSwVZiUVOznPUI80av0SLJzTZjkVP8TiBMkFYoAUO1nvHi0VOMkFYoovHLYzSwzSLJLBSF8jL8DiBivjQOMSOwnvHLYzSzzSLJzzajUVOvn.TuIGcg0CLt.CLJ.kP8HiBPIDQ8HiBMQUctMUOvnPSTUmaN0yMJzDU04FU8fiBTI2bv0SKwHiBFQUct0CLt.CLJ.0axQmTm0SLv.iKv.iBR4zazUVOvnfTVUFa8.iBiLVa8zzTEcTLJPUaU4VOwnPQtYWO4nfUkwVOv3BLvnPPzsVOv3BLvn.SvQWOv3BLvnfTkwVOv3BLvn.Uxk1Y8.iBiLVa8zzTEcjLJPUaU4VOwnPQtYWOw.iBVUFa8.iKv.iBAQ2Z8.iKv.iBLAGc8.iKv.iBRUFa8.iKv.iBTIWZm0CLJLxXs0CSF8TLJLUdtMVOzn.Uxk1Y8.iBWElck0CLJ.EZyUVOv3BLvnfTgQWY8DCLv3BLvnPPsAWOw.CLt.CLJLEakcWOwnfSyQGb8DiMJLEcvMWOwDiBUckc8.iBDwVd8.iKv.iBD0zTwzCLJPTSDESOv3BLvnfQMMUL8.iBF0DQwzCLt.CLJLxXs0CSF8jLJLUdtMVOzn.Uxk1Y8.iBWElck0CLJ.EZyUVOv3BLvnfTgQWY8DCLv3BLvnPPsAWOw.CLt.CLJLEakcWOwnfSyQGb8DiMJLEcvMWOwHiBUckc8.iBDwVd8.iKv.iBD0zTwzCLJPTSDESOv3BLvnfQMMUL8.iBF0DQwzCLt.CLJLxXs0CSF8zLJLUdtMVOzn.Uxk1Y8.iBWElck0CLJ.EZyUVOv3BLvnfTgQWY8DCLv3BLvnPPsAWOw.CLt.CLJLEakcWOwnfSyQGb8DiMJLEcvMWOwLiBUckc8.iBDwVd8.iKv.iBD0zTwzCLJPTSDESOv3BLvnfQMMUL8.iBF0DQwzCLt.CLJLxXs0CSF8DMJLUdtMVOzn.Uxk1Y8.iBWElck0CLJ.EZyUVOv3BLvnfTgQWY8DCLv3BLvnPPsAWOw.CLt.CLJLEakcWOwnfSyQGb8DiMJLEcvMWOwPiBUckc8.iBDwVd8.iKv.iBD0zTwzCLJPTSDESOv3BLvnfQMMUL8.iBF0DQwzCLt.CLJLxXs0SSF0jLJPjb40yMy3BLvnfQB0TO1DiK0.iBMQmb30SLJbUYz0CM23RMvnPSlgWL8TiBSMTL8HSMt.CLJL0PSESOvnvTCQTL8.iKv.iBDMTL8TCLt.CLJPzPSESOvn.QCQTL8.iKv.iBFMUL8.iKv.iBFM0TwzCLJXzTDESOv3BLvn.TSESO0.iKv.iBPM0TwzCLJ.0TDESOv3BLvn.TSYTL8TCLt.CLJfTZDESO1jiK0.iBL8FQwzSLv.iKv.iBMYFdxzSMJL0PxziL03BLvnvTCMkL8.iBSMDQxzCLt.CLJPzPxzSMv3BLvn.QCMkL8.iBDMDQxzCLt.CLJXzTxzCLt.CLJXzTSISOvnfQSQjL8.iKv.iBPMkL8TCLt.CLJ.0TSISOvn.TSQjL8.iKv.iBPMkQxzSMv3BLvn.RoQjL8.iKv.iBL8FQxzyM23BLvnfQB0DY8DiBDkWSuESOvn.Q4A0TwzCLJPTdCQUL8.iBDkGSqESOvn.Q4QEZwzSKwHiKv.iBDk2PvESO03BLvn.Q4EDcwzyLt.CLJPTdRUVL8biKv.iBDk2S0ESOv3BLvn.Q40zaxzCLJPTdPMkL8.iBDk2PTISOvn.Q4wzZxzCLJPTdTglL8zRLx3BLvn.Q4MDbxzSMt.CLJPTdAQmL8LiKv.iBDkmTkISO23BLvn.Q48TcxzCLt.CLJLxXs0SSF0zXwnPRtAWOxnfQr81c8DiBTI1bk0CLJLUdtMVL8jiBRQ2a8DCLv3BLvnfTTMkbi0CLJHEUM8FY8.iKv.iBMMUO0.CLt.CLJzzTSI2X8.iBMMUSuQVOv3BLvn.U04VY8.iKv.iBT0zTxMVOvn.UMQDbz0CLt.CLJXjPwzCLt.CLJXjPxzCLt.CLJXjPyzCLt.CLJXjPzzCLt.CLJ.UXt0SKw.CLt.CLJ.UXtM0X8.iBPElaDQWOv3BLvnvS0QWOw.CLt.CLJ7TczM0X8.iBOUGcDQWOv3BLvnfQTkGb8XiBCUGc8DSMv3BLvnfTkMWOv3BLvnfQSESOvnfQMESOv3BLvnvRkkmQuwVOv3BLvnvHi0VOMYTSiIiBI4Fb8LiBFw1a20SLJPkXyUVOvnvT441XwziLJHEcu0SLv.iKv.iBRQ0TxMVOvnfTT0zaj0CLt.CLJzzT8TCLv3BLvnPSSMkbi0CLJzzTM8FY8.iKv.iBTUmak0CLt.CLJPUSSI2X8.iBT0DQvQWOv3BLvnfQBESOv3BLvnfQBISOv3BLvnfQBMSOv3BLvnfQBQSOv3BLvn.Tg4VOw.CLt.CLJ.UXtM0X8.iBPElaDQWOv3BLvnvS0QWOw.CLt.CLJ7TczM0X8.iBOUGcDQWOv3BLvnfQTkGb8biBCUGc8LCLt.CLJHUYy0CLt.CLJXzTwzCLJXTSwzCLt.CLJrTY4Yzar0CLt.CLJLxXs0SSF0zXynPRtAWOxnfQr81c8DiBTI1bk0CLJLUdtMVL8DCLJHEcu0SLv.iKv.iBRQ0TxMVOvnfTT0zaj0CLt.CLJzzT8TCLv3BLvnPSSMkbi0CLJzzTM8FY8.iKv.iBTUmak0CLt.CLJPUSSI2X8.iBT0DQvQWOv3BLvnfQBESOv3BLvnfQBISOv3BLvnfQBMSOv3BLvnfQBQSOv3BLvn.Tg4VOsDCLv3BLvn.Tg41Ti0CLJ.UXtQDc8.iKv.iBOUGc8TCLt.CLJ7TczM0X8.iBOUGcDQWOv3BLvnfQTkGb8XiBCUGc8DCL13BLvnfTkMWOv3BLvnfQSESOvnfQMESOv3BLvnvRkkmQuwVOv3BLvnvHi0VOMYTSiQiBI4Fb8LiBFw1a20SLJPkXyUVOvnvT441XwzyLJHEcu0SLv.iKv.iBRQ0TxMVOvnfTT0zaj0CLt.CLJzzT8TCLv3BLvnPSSMkbi0CLJzzTM8FY8.iKv.iBTUmak0CLt.CLJPUSSI2X8.iBT0DQvQWOv3BLvnfQBESOv3BLvnfQBISOv3BLvnfQBMSOv3BLvnfQBQSOv3BLvn.Tg4VOw.CLt.CLJ.UXtM0X8.iBPElaDQWOv3BLvnvS0QWO0.iKv.iBOUGcSMVOvnvS0QGQz0CLt.CLJXDU4AWO2nvP0QWOy.iKv.iBRU1b8.iKv.iBFMUL8.iBF0TL8.iKv.iBKUVdF8Fa8.iKv.iBJnvKu.xTkMFco8lafX1axARcmwVdfL1asAmbkM2bkQFHhklagIWdfPTXzElBu7BHD8jSmPEHT8TUCgDHTgTRSofBjPBIjLiL3PiB+n1ZpolZpw1a5bFYmMVYtUlX5.GbnAWXgEVX5DVXgEVZgQFb5.2anAWXgEVX5DVXmEVXgEVX5DVXgEVZgUVX5nPZgEVXgEVXgoSXhEVXgEVXgoSYgEVXgEVXgoSXgoSYioSYhoSYgoyXgoyZgoSagoCZgoiZjoCaooyagoSXioyaJHlNgIlNgYlNjElNg4lNlElNm0lNvElNgQlNhElNkklNkAmNmElNmIVHxETdAYSYscFbmQlVSEjL4EzLHg0SMUmBhYFSAUCQtYFYl4jcAI1as4VU1YTYu8TS0kFapoVRmc1bAEUP0bTYu8TS0QDTuslZqMGQC0FYQYWPX8TS0klYiovZpM1YmMWVtUFav8lZvMFZvETLGw1aj0FbiAGbpAGbvECQj41aqo1ZyQzPsQVT1ETdAIiQjsVatkzbG8Fbs0VRJTUPynDapkzbDMTajEkcFQ1Zs4VRyQkRroVRyczav0VaIMGRX8TS0sFbpolauQFaygDVO0TcToDapkzb4AGbynlBngEYmcVZyImdAciYlcUQRclZm81YnUjTmA2YucFZEUlYmQ1YocFbmYFZjM1amkFYigTPhYFSAUCQtYFYl4jcAofXu0laUYmQk81SMUWZrolZIc1YyImdAcSLxoWP2flXjc1XsIlZKoVYSY1ZsgFRm8FakwzTvMlZt81ag0lXnU1aJjlarIlZgEERiYFbogVYjcVTuAmUjYFZqQFYgolYh8VYpolVgkFbsY1XhslRpwVQnslZv4lZlIFZvY1aoolaqglBloDaqYFasAGaiolaDclaxEVYAECLMM1XggVPxETdAYiYlg1XnQVQWclYmQ1YrclaZc1awTzXtUDZlMlamk1YlovXucFYmA2YtEjLyHib3ETLyTib5EzMmU1Ylc1YZglYSgVYEgFYmQlVSclYAIiLzEjLDETLDEycAEiQDETLGQTPJDyRDIWPLETMzEzLzEjLDETLDEycAEiQDETLGQTPwrjdCETLVMTPwTzPAECTCETLDMTPwH0PAESVCETLHMTPwjlBgMTPwjVZCETLpE1PAEiZoMTPwXzPAEyZoMTPwvVXCETLJMTPwbzPAESaoMTPw3VXCETLtk1PAEyRCETLuk1PAoPLTMTPw.WZCEjLBETLgUlPAESXoITPwDVaBETLVITPwHVYBETLhklPAEiXsITPwTjPAEyXkITPwLVZBETLi0lPJDTLPITPwPVYBETLjklPAECYsITPwPjPAESYkITPwbkPAESYsITPwHkPAEiYkITPwXVZBETLl0lPAESVBETLmUlBBETLmklPAEyTBETLHITPwfVYBETLnklPAECZsITPwjVXBETLoMlPAESZkITPwj1YBETLoklPAESZqITPwjVaBoPPwj1aBETLpElPAEiZiITPwnVYBETLpclPAEiZoITPwn1ZBETLp0lPAEiZuITPwXjPAEyZiITPwrVYBETLqclPJDTLqklPAEyZqITPwrVaBETLq8lPAECagITPwv1XBETLrUlPAECamITPwnjPAECaqITPwvVaBETLr8lPAEyQBEjBwz1XBETLsUlPAESamITPwzVZBETLsslPAESasITPwz1aBETLtElPAEiaiITPw3VYBETLtclPAEiaoITPw31ZBoPPw3VaBETLt8lPAEyRBETLuMlPAEyakITPw71YBETLuklPAEyaqITPw7VaBETLu8lPAECUBETLvMlPAECbkITPJDCbmITPw.WZBETLvslPAECbsITPw.2aBIGTLETMzEzLUEjL4wTPx3TXkEjL0DGcwDzLwc2Zrs1ZusFYuEzLwEjBwb0PAcSb2EzMwETLFoWPzDWPwbjdAQSbAEyR5EDMwEjLCEzMwETLRMTP2DWPwfzPAcSbAESVCEzMwETLDMTP2nPbAECTCEzMwETLEMTP2DWPwX0PAcSbAESZgMTP2DWPwjVZCEzMwETLpE1PAcSbAEiZoMTP2DWPwXzPAcSbAEyZJj1PAcSbAECagMTP2DWPwnzPAcSbAEyQCEzMwETLsk1PAcSbAEiagMTP2DWPw3VZCEzMwETLKMTP2DWPw7VZCEjB2DWPwP0PAcSbAECboMTP2DWPwTibPwTP0PWPyTUPxjGSAIiSgUVPxTSbzESPyD2cqw1Zq81Zj8VPyDWPwb0PAovMwcWP2DWPwXjdAQSbAEyQ5EDMwETLKoWPzDWPxLTP2DWPwH0PAcSbAECRCEzMwETLYMTP2DWPwPzPAcSbAECTJLTP2DWPwTzPAcSbAEiUCEzMwETLoE1PAcSbAESZoMTP2DWPwnVXCEzMwETLpk1PAcSbAEiQCEzMwETLqk1PAciBwETLrE1PAcSbAEiRCEzMwETLGMTP2DWPwzVZCEzMwETLtE1PAcSbAEiaoMTP2DWPwrzPAcSbAEyaoMTP2DWPwn.UCEzMwETLvk1PAcSbAESMxgWPyPWPwHyMxgWPyPWPwHyMxgWPyPWPwHyMxgWPyPWPwHyM8DSMxDiLxn...7EDSTERf.UZtcFHP8lamARQig1akMG.H.vE.PB.o.PL.jC.9.vQ.vD.QUPTEXUAXUPWYjO.......f.A.........vC..................fFO."
+							"blob" : "6725.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.WsEla0YVXiQWcxUlbTQVXzE1UyUmXzkGbkckckI2bo8laTQWdvUFVA0zWSQUPTUDUtEVakIQUHYFVOEAA7C..............dB....fPBO6L....A.........f..........L..........D.........PA.........X..........G..........B.........j..........J.........vB.........v..........M.........fC.........7..........P.........PD+.H......HwO.B......S7Cf.......E+.H......TA.........V.........vEACD......fA.........Y.........fF.........rA.........b.........PG.........3A.........e..........H.........DB.........h.........vH.AH......PB.........k.Df......fI.........bBP.B......n.........PJ.AH......nB.........qHjj.......KBYG......zhP9.......tDDx......vK..........iPHA......w.........fL.........LC.........zHDR......PM.........XiPHA......2Hzh.......NBgL......jSPHC......5.........vNBgD......vC.........8.........fO.........7iPHA.......A........PPBgD......HD.........CIjl.......QACD......TDPfB......FADP......vQ.AN......fD.........IELP......fR.AJ......rDP.A......LAD3......PS.........3jPHC......OA.........TCoO......DE.........RA........vT.........PE.........UA........fU.........bE.........XA........PVBiL......nE.........aIDx.......W.........zEP.C......dMjE......vW..........F.........gA........fXBgL......LF.........jMj9......PY.........XF.........mA.........Z.........jF.........pA........vZ.........vF.........sIDx......fa.........7lPHC......vA........Pb.AN......HWPvC......yA.........c.........TG.........1IDx......vc.........f2P5C......4A........fd.........rG.........7A........Pe.........3G.........+A.........f.........DnvHC......BB........vfBgD......PH.........EBDv......fgBQM......bH.........HB........Ph.........nnPHC......KB.........iCoO......zH.........NB........vi..........I.........QB........fj.........LI.........TB........PkBgL......XI.........WJDR.......l.........jIPfC......ZFD7......vl.........vI.........cB....fDMYTSx.A.RDVcsY1SQPAjunBPsUFcgofBAUGcn8lb5nvIUI2bffTYisVag4lafzBH00BZk4xXu01IJn.QkM2XxkFbzk1atoiBmPEZoMGHoMGHgABYuUmXrUFHPklamABTu41YfPVYrEVdt3hKMzvStUFHPAEQfj1bfXVXyQWYxARXtQFHlkFazUlbyAxcoQGZfDFHnk1YnAWXyMGKfPGZkAxazgVYxAxatUFHoMGHr81ckIGHg4FYfXVZrQWYxMGH2kFcnARXfv1a2AWXyMmKfbhBJT0bgcVY5nvIPUGcfbGZkIWY1UlbfDFHt8lbsEFafPVYrEVdfj1btchBJnxKJnvHA0TOMYTSxnvHVUlby0iLv.CL0nvHE4FYoEla8vVZzQGakovHt0VOwTiBiz1b831atUlBiz1b8zzajcEZrovHsMWOPkFcig1UJLRay0iPxUVXzglBiz1b8fEbxU1byovHsMWOGEFckovHsMWOKUVdF8FaJLRay0iUkw1aikFc4ovHsMWOAQ0a0MFZJLRay0SSSUzQwnvHsMWOMMUQGIiBiz1b8vjYuEiBiz1b8vjYuIiBiz1b8vjYuMiBiz1b8vjYuQiBi3lc8DiBizlc8bTXzUlBiLVa8zVXo4lBCM1Sv0SN23xL0nvHi0VOPMzaxUlBM0DUwziau4VY5D1byk1YtUFYJzTSSESOvnPSMQTL8.iKv.iBM0jUSESOvnPSMYEQwzCLt.CLJzTSTISOt8lakoSXyMWZm4VYjoPSMMkL8.iBM0DQxzCLt.CLJzTSVMkL8.iBM0jUDISOv3BLvnPSMQ0L831atUlNgM2boclakQlBM0zTyzCLJzTSDMSOv3BLvnPSMY0TyzCLJzTSVQzL8.iKv.iBM0DUzziau4VY5D1byk1YtUFYJzTSSQSOvnPSMQDM8.iKv.iBM0jUSQSOvnPSMYEQzzCLt.CLJLkPgMWY8PiBScWZtcVOv3BLvnvTTIWZm0SLJ.0Tu41Y8TiBPYzarQVOvn.TFkFak0SLJbjQowVY8HiBGM0XgwVY8.iBCgFSgkWOvnvT0ImbO0SLJHUY10yL3jCNJvTQD0CLt.CLJ.UPGUTOvn.TgcVYy8ja8.iBC8lbk4TOynvTrk1Xk0CMJTURe8Fb8DiBMkFYoETO0nPSoQVZP0iMJLxXs0SSoQVZJLBSF8TL8DiBivjQOISOwnvHLYzSyzSLJLBSF8DM8DiBM8FYk0CLJ.0axQWX8.iKv.iBPITOxn.TBQTOxnPSTUmaS0CLJzDU04lS8biBMQUctQUO3n.UxMGb8zRLxnfQTUma8.iKv.iBP8lbzI0Y8DCLv3BLvnfTN8Fck0CLJHkUkwVOvnvHi0VOMMUQGEiBT0VUt0SLJTja10SNJXUYr0CLt.CLJDDcq0CLt.CLJvDbz0CLt.CLJHUYr0CLt.CLJPkbocVOvnvHi0VOMMUQGIiBT0VUt0SLJTja10SLvnfUkwVOv3BLvnPPzsVOv3BLvn.SvQWOv3BLvnfTkwVOv3BLvn.Uxk1Y8.iBiLVa8vjQOEiBSkmai0CMJPkbocVOvnvUgYWY8.iBPg1bk0CLt.CLJHUXzUVOw.CLt.CLJDTav0SLv.iKv.iBSwVY20SLJ3zbzAWOwXiBSQGby0SLwnPUWYWOvn.QrkWOv3BLvn.QMMUL8.iBD0DQwzCLt.CLJXTSSESOvnfQMQTL8.iKv.iBiLVa8vjQOIiBSkmai0CMJPkbocVOvnvUgYWY8.iBPg1bk0CLt.CLJHUXzUVOw.CLt.CLJDTav0SLv.iKv.iBSwVY20SLJ3zbzAWOwXiBSQGby0SLxnPUWYWOvn.QrkWOv3BLvn.QMMUL8.iBD0DQwzCLt.CLJXTSSESOvnfQMQTL8.iKv.iBiLVa8vjQOMiBSkmai0CMJPkbocVOvnvUgYWY8.iBPg1bk0CLt.CLJHUXzUVOw.CLt.CLJDTav0SLv.iKv.iBSwVY20SLJ3zbzAWOwXiBSQGby0SLynPUWYWOvn.QrkWOv3BLvn.QMMUL8.iBD0DQwzCLt.CLJXTSSESOvnfQMQTL8.iKv.iBiLVa8vjQOQiBSkmai0CMJPkbocVOvnvUgYWY8.iBPg1bk0CLt.CLJHUXzUVOw.CLt.CLJDTav0SLv.iKv.iBSwVY20SLJ3zbzAWOwXiBSQGby0SLznPUWYWOvn.QrkWOv3BLvn.QMMUL8.iBD0DQwzCLt.CLJXTSSESOvnfQMQTL8.iKv.iBiLVa8zjQMIiBDIWd8byLt.CLJXjPM0iMw3RMvnPSzIGd8DiBWUFc8PyMtTCLJzjY3ESO0nvTCESOxTiKv.iBSMzTwzCLJL0PDESOv3BLvn.QCESO0.iKv.iBDMzTwzCLJPzPDESOv3BLvnfQSESOv3BLvnfQSMUL8.iBFMEQwzCLt.CLJ.0TwzSMv3BLvn.TSMUL8.iBPMEQwzCLt.CLJ.0TFESO0.iKv.iBHkFQwziM43RMvn.SuQTL8DCLv3BLvnPSlgmL8TiBSMjL8HSMt.CLJL0PSISOvnvTCQjL8.iKv.iBDMjL8TCLt.CLJPzPSISOvn.QCQjL8.iKv.iBFMkL8.iKv.iBFM0TxzCLJXzTDISOv3BLvn.TSISO0.iKv.iBPM0TxzCLJ.0TDISOv3BLvn.TSYjL8TCLt.CLJfTZDISOv3BLvn.SuQjL8byMt.CLJXjPMQVOwn.Q40zawzCLJPTdPMUL8.iBDk2PTESOvn.Q4wzZwzCLJPTdTgVL8zRLx3BLvn.Q4MDbwzSMt.CLJPTdAQWL8LiKv.iBDkmTkESO23BLvn.Q48TcwzCLt.CLJPTdM8lL8.iBDkGTSISOvn.Q4MDUxzCLJPTdLslL8.iBDkGUnISOsDiLt.CLJPTdCAmL8TiKv.iBDkWPzISOy3BLvn.Q4IUYxzyMt.CLJPTdOUmL8.iKv.iBiLVa8zjQMMVLJjjav0iLJXDaucWOwn.UhMWY8.iBSkmaiESO4nfTz8VOw.CLt.CLJHEUSI2X8.iBRQUSuQVOv3BLvnPSS0SMv.iKv.iBMM0TxMVOvnPSS0zaj0CLt.CLJPUctUVOv3BLvn.UMMkbi0CLJPUSDAGc8.iKv.iBFITL8.iKv.iBFIjL8.iKv.iBFIzL8.iKv.iBFIDM8.iKv.iBPEla8zRLv.iKv.iBPElaSMVOvn.Tg4FQz0CLt.CLJ7Tcz0SLv.iKv.iBOUGcSMVOvnvS0QGQz0CLt.CLJXDU4AWO1nvP0QWOwTCLt.CLJHUYy0CLt.CLJXzTwzCLJXTSwzCLt.CLJrTY4Yzar0CLt.CLJLxXs0SSF0zXxnPRtAWOynfQr81c8DiBTI1bk0CLJLUdtMVL8HiBRQ2a8DCLv3BLvnfTTMkbi0CLJHEUM8FY8.iKv.iBMMUO0.CLt.CLJzzTSI2X8.iBMMUSuQVOv3BLvn.U04VY8.iKv.iBT0zTxMVOvn.UMQDbz0CLt.CLJXjPwzCLt.CLJXjPxzCLt.CLJXjPyzCLt.CLJXjPzzCLt.CLJ.UXt0SLv.iKv.iBPElaSMVOvn.Tg4FQz0CLt.CLJ7Tcz0SLv.iKv.iBOUGcSMVOvnvS0QGQz0CLt.CLJXDU4AWO2nvP0QWOy.iKv.iBRU1b8.iKv.iBFMUL8.iBF0TL8.iKv.iBKUVdF8Fa8.iKv.iBiLVa8zjQMM1LJjjav0iLJXDaucWOwn.UhMWY8.iBSkmaiESOw.iBRQ2a8DCLv3BLvnfTTMkbi0CLJHEUM8FY8.iKv.iBMMUO0.CLt.CLJzzTSI2X8.iBMMUSuQVOv3BLvn.U04VY8.iKv.iBT0zTxMVOvn.UMQDbz0CLt.CLJXjPwzCLt.CLJXjPxzCLt.CLJXjPyzCLt.CLJXjPzzCLt.CLJ.UXt0SKw.CLt.CLJ.UXtM0X8.iBPElaDQWOv3BLvnvS0QWO0.iKv.iBOUGcSMVOvnvS0QGQz0CLt.CLJXDU4AWO1nvP0QWOw.iMt.CLJHUYy0CLt.CLJXzTwzCLJXTSwzCLt.CLJrTY4Yzar0CLt.CLJLxXs0SSF0zXznPRtAWOynfQr81c8DiBTI1bk0CLJLUdtMVL8LiBRQ2a8DCLv3BLvnfTTMkbi0CLJHEUM8FY8.iKv.iBMMUO0.CLt.CLJzzTSI2X8.iBMMUSuQVOv3BLvn.U04VY8.iKv.iBT0zTxMVOvn.UMQDbz0CLt.CLJXjPwzCLt.CLJXjPxzCLt.CLJXjPyzCLt.CLJXjPzzCLt.CLJ.UXt0SLv.iKv.iBPElaSMVOvn.Tg4FQz0CLt.CLJ7Tcz0SMv3BLvnvS0Q2Ti0CLJ7TczQDc8.iKv.iBFQUdv0yMJLTcz0yLv3BLvnfTkMWOv3BLvnfQSESOvnfQMESOv3BLvnvRkkmQuwVOv3BLvnfBJnfBu7BHSU1Xzk1atAhYuIGH0cFa4AxXu0FbxU1byUFYfHVZtElb4ABQgQWXJ7xKfPzSNcBUfP0SUMDRfPERIMkBJPBIjPxLxfCMJ7iZqolZpoFauoyYjc1Xk4VYhoCbvgFbgEVXgoSXgEVXoEFYvoCbugFbgEVXgoSXgcVXgEVXgoSXgEVXoEVYgoiBoEVXgEVXgElNgIVXgEVXgElNkEVXgEVXgElNgElNkMlNkIlNkElNiElNqElNsElNnElNpQlNrklNuElNgMlNuofX5DlX5DlY5PVX5Dla5XVX5bVa5.WX5DFY5HVX5TVZ5TFb5bVX5blXgHWP4EjMk01YvcFYZMUPxjWPyfDVO0TcJHlYLETMD4lYjYlS1EjXu0laUYmQk81SMUWZrolZIc1YyETTAUyQk81SMUGQP81Zps1bDMTajEkcAg0SMUWZlMlBqo1Xmc1bY4VYrA2apA2XnAWPwbDauQVavMFbvoFbvAWLDQlauslZqMGQC0FYQYWP4EjLFQ1Zs4VRyczav0VaIoPUAMiRroVRyQzPsQVT1YDYq0laIMGUJwlZIM2QuAWaskzbHg0SMU2ZvolZt8FYrMGRX8TS0QkRroVRykGbvMiZJfFVjc1YoMmb5EzMlY1UEI0Ypc1amgVQRcFbm81YnUTYlcFYmk1YvclYnQ1XucVZjMFRAIlYLETMD4lYjYlS1EjBh8VatUkcFU1aO0TcowlZpkzYmMmb5EzMwHmdAcCZhQ1Yi0lXpsjZkMkYq0FZHc1arUFSSA2Xp41auEVahgVYuoPZtwlXpEVTHMlYvkFZkQ1YQ8FbVQlYnsFYjElZlI1akolZZEVZv0lYiI1ZJoFaEg1ZpAmapYlXnAmYuklZtsFZJXlRrslYr0FbrMlZtQzYtIWXkETLvzzXvAmXAIWP4EjMlYFZigFYEc0YlcFYmw1Yto0YuESQi4VQnY1XtcVZmYlBi81YjcFbm4VPxLiLxgWPwLSMxoWP2bVYmY1YmoEZlMEZkUDZjcFYZM0YlEjLxPWPxPTPwPTL2ETLFQTPwbDQAoPLKQjbAwTP0PWPyPWPxPTPwPTL2ETLFQTPwbDQAEyR5MTPwX0PAESQCETLPMTPwPzPAEiTCETLYMTPwfzPAESZJD1PAESZoMTPwnVXCETLpk1PAEiQCETLqk1PAECagMTPwnzPAEyQCETLsk1PAEiagMTPw3VZCETLKMTPw7VZCEjBwP0PAECboMTPxHTPwDVYBETLgklPAESXsITPwXkPAEiXkITPwHVZBETLh0lPAESQBETLiUlPAEyXoITPwLVaBoPPw.kPAECYkITPwPVZBETLj0lPAECQBETLkUlPAEyUBETLk0lPAEiTBETLlUlPAEiYoITPwXVaBETLYITPwbVYJHTPwbVZBETLSITPwfjPAECZkITPwfVZBETLn0lPAESZgITPwj1XBETLoUlPAESZmITPwjVZBETLoslPAESZsIjBAESZuITPwnVXBETLpMlPAEiZkITPwn1YBETLpklPAEiZqITPwnVaBETLp8lPAEiQBETLqMlPAEyZkITPwr1YBoPPwrVZBETLqslPAEyZsITPwr1aBETLrElPAECaiITPwvVYBETLrclPAEiRBETLrslPAECasITPwv1aBETLGITPJDSaiITPwzVYBETLsclPAESaoITPwz1ZBETLs0lPAESauITPw3VXBETLtMlPAEiakITPw31YBETLtklPAEiaqIjBAEiasITPw31aBETLKITPw71XBETLuUlPAEyamITPw7VZBETLuslPAEyasITPw71aBETLTITPw.2XBETLvUlPAoPLvclPAECboITPw.2ZBETLv0lPAECbuIjbPwTP0PWPyTUPxjGSAIiSgUVPxTSbzESPyD2cqw1Zq81Zj8VPyDWPJDyUCEzMwcWP2DWPwXjdAQSbAEyQ5EDMwETLKoWPzDWPxLTP2DWPwH0PAcSbAECRCEzMwETLYMTP2DWPwPzPAciBwETLPMTP2DWPwTzPAcSbAEiUCEzMwETLoE1PAcSbAESZoMTP2DWPwnVXCEzMwETLpk1PAcSbAEiQCEzMwETLqoPZCEzMwETLrE1PAcSbAEiRCEzMwETLGMTP2DWPwzVZCEzMwETLtE1PAcSbAEiaoMTP2DWPwrzPAcSbAEyaoMTPJbSbAECUCEzMwETLvk1PAcSbAESMxAESAUCcAMSUAISdLEjLNEVYAISMwQWLAMSb2sFaqs1aqQ1aAMSbAEyUCEjB2D2cAcSbAEiQ5EDMwETLGoWPzDWPwrjdAQSbAIyPAcSbAEiTCEzMwETLHMTP2DWPwj0PAcSbAECQCEzMwETLPovPAcSbAESQCEzMwETLVMTP2DWPwjVXCEzMwETLok1PAcSbAEiZgMTP2DWPwnVZCEzMwETLFMTP2DWPwrVZCEzMJDWPwvVXCEzMwETLJMTP2DWPwbzPAcSbAESaoMTP2DWPw3VXCEzMwETLtk1PAcSbAEyRCEzMwETLuk1PAcSbAEiBTMTP2DWPw.WZCEzMwETL0HGdAMCcAEiL2HGdAMCcAEiL2HGdAMCcAEiL2HGdAMCcAEiL2zSL0HSLzPiB..vWPLQUHABTo41Yf.0atcFHEMFZuU1b.f..W..I.jB.w.PN.3C.GA.S.DUAQUfUEfUAckQ7........BD..........O...................Zb."
 						}
 ,
 						"snapshotlist" : 						{
@@ -105,7 +371,7 @@
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "6733.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.WsEla0YVXiQWcxUlbTQVXzE1UyUmXzkGbkckckI2bo8laTQWdvUFVA0zWSQUPTUDUtEVakIQUHYFVOEAA7C..............dB....fPBO6L....A.........f..........L..........D.........PA.........X..........G..........B.........j..........J.........vB.........v..........M.........fC.........7..........P.........PD+.H......HwO.B......S7Cf.......E+.H......TA.........V.........vEACD......fA.........Y.........fF.........rA.........b.........PG.........3A.........e..........H.........DB.........h.........vH.AH......PB.........k.Df......fI.........bBP.B......n.........PJ.AH......nB.........qHjj.......KBYG......zhP9.......tDDx......vK..........iPHA......w.........fL.........LC.........zHDR......PM.........XiPHA......2Hzh.......NBgL......jSPHC......5.........vNBgD......vC.........8.........fO.........7iPHA.......A........PPBgD......HD.........CIjl.......QACD......TDPfB......FADP......vQ.AN......fD.........IELP......fR.AJ......rDP.A......LAD3......PS.........3jPHC......OA.........TCoO......DE.........RA........vT.........PE.........UA........fU.........bE.........XA........PVBiL......nE.........aIDx.......W.........zEP.C......dMjE......vW..........F.........gA........fXBgL......LF.........jMj9......PY.........XF.........mA.........Z.........jF.........pA........vZ.........vF.........sIDx......fa.........7lPHC......vA........Pb.AN......HWPvC......yA.........c.........TG.........1IDx......vc.........f2P5C......4A........fd.........rG.........7A........Pe.........3G.........+A.........f.........DnvHC......BB........vfBgD......PH.........EBDv......fgBQM......bH.........HB........Ph.........nnPHC......KB.........iCoO......zH.........NB........vi..........I.........QB........fj.........LI.........TB........PkBgL......XI.........WJDR.......l.........jIPfC......ZFD7......vl.........vI.........cB....fDMYTSx.A.RDVcsY1SQPAlunBPsUFcgofBAUGcn8lb5nvIUI2bffTYisVag4lafzBH00BZk4xXu01IJn.QkM2XxkFbzk1atoiBmPEZoMGHoMGHgABYuUmXrUFHPklamABTu41YfPVYrEVdt3hKMzvStUFHPAEQfj1bfXVXyQWYxARXtQFHlkFazUlbyAxcoQGZfDFHnk1YnAWXyMGKfPGZkAxazgVYxAxatUFHoMGHr81ckIGHg4FYfXVZrQWYxMGH2kFcnARXfv1a2AWXyMmKfbhBJT0bgcVY5nvIPUGcfbGZkIWY1UlbfDFHt8lbsEFafPVYrEVdfj1btcBcfTlauU2YnExIJnfJunfBiDTS8zjQMIiBiXUYxMWOx.CLvTiBiTjajkVXt0CaoQGcrUlBi3Va8DSMJLRay0iau4VYJLRay0SSuQ1UnwlBiz1b8.UZzMFZWovHsMWOBIWYgQGZJLRay0CVvIWYyMmBiz1b8bTXzUlBiz1b8rTY4YzarovHsMWOVUFauMVZzkmBiz1b8DDUuU2XnovHsMWOMMUQGEiBiz1b8zzTEcjLJLRay0CSl8VLJLRay0CSl8lLJLRay0CSl81LJLRay0CSl8FMJLha10SLJLRa10yQgQWYJLxXs0SagklaJLzXOAWO4biKyTiBiLVa8.0PuIWYJzTSTESOt8lakoSXyMWZm4VYjoPSMMUL8.iBM0DQwzCLt.CLJzTSVMUL8.iBM0jUDESOv3BLvnPSMQkL831atUlNgM2boclakQlBM0zTxzCLJzTSDISOv3BLvnPSMY0TxzCLJzTSVQjL8.iKv.iBM0DUyziau4VY5D1byk1YtUFYJzTSSMSOvnPSMQzL8.iKv.iBM0jUSMSOvnPSMYEQyzCLt.CLJzTSTQSOt8lakoSXyMWZm4VYjoPSMMEM8.iBM0DQzzCLt.CLJzTSVMEM8.iBM0jUDQSOv3BLvnvTBE1bk0CMJL0co41Y8.iKv.iBSQkbocVOwn.TS8lam0SMJ.kQuwFY8.iBPYTZrUVOwnvQFkFak0iLJbzTiEFak0CLJLDZLEVd8.iBSUmbx8TOwnfTkYWOyfSN3n.SEQTOv3BLvn.TAcTQ8.iBPE1YkM2St0CLJLzaxUlS8LiBSwVZiUVOznPUI80av0SLJzTZjkVP8TiBMkFYoAUO1nvHi0VOMkFYoovHLYzSwzSLJLBSF8jL8DiBivjQOMSOwnvHLYzSzzSLJzzajUVOvn.TuIGcg0CLt.CLJ.kP8HiBPIDQ8HiBMQUctMUOvnPSTUmaN0yMJzDU04FU8fiBTI2bv0SKwHiBFQUct0CLt.CLJ.0axQmTm0SLv.iKv.iBR4zazUVOvnfTVUFa8.iBiLVa8zzTEcTLJPUaU4VOwnPQtYWO4nfUkwVOv3BLvnPPzsVOv3BLvn.SvQWOv3BLvnfTkwVOv3BLvn.Uxk1Y8.iBiLVa8zzTEcjLJPUaU4VOwnPQtYWOw.iBVUFa8.iKv.iBAQ2Z8.iKv.iBLAGc8.iKv.iBRUFa8.iKv.iBTIWZm0CLJLxXs0CSF8TLJLUdtMVOzn.Uxk1Y8.iBWElck0CLJ.EZyUVOv3BLvnfTgQWY8DCLv3BLvnPPsAWOw.CLt.CLJLEakcWOwnfSyQGb8DiMJLEcvMWOwDiBUckc8.iBDwVd8.iKv.iBD0zTwzCLJPTSDESOv3BLvnfQMMUL8.iBF0DQwzCLt.CLJLxXs0CSF8jLJLUdtMVOzn.Uxk1Y8.iBWElck0CLJ.EZyUVOv3BLvnfTgQWY8DCLv3BLvnPPsAWOw.CLt.CLJLEakcWOwnfSyQGb8DiMJLEcvMWOwHiBUckc8.iBDwVd8.iKv.iBD0zTwzCLJPTSDESOv3BLvnfQMMUL8.iBF0DQwzCLt.CLJLxXs0CSF8zLJLUdtMVOzn.Uxk1Y8.iBWElck0CLJ.EZyUVOv3BLvnfTgQWY8DCLv3BLvnPPsAWOw.CLt.CLJLEakcWOwnfSyQGb8DiMJLEcvMWOwLiBUckc8.iBDwVd8.iKv.iBD0zTwzCLJPTSDESOv3BLvnfQMMUL8.iBF0DQwzCLt.CLJLxXs0CSF8DMJLUdtMVOzn.Uxk1Y8.iBWElck0CLJ.EZyUVOv3BLvnfTgQWY8DCLv3BLvnPPsAWOw.CLt.CLJLEakcWOwnfSyQGb8DiMJLEcvMWOwPiBUckc8.iBDwVd8.iKv.iBD0zTwzCLJPTSDESOv3BLvnfQMMUL8.iBF0DQwzCLt.CLJLxXs0SSF0jLJPjb40yMy3BLvnfQB0TO1DiK0.iBMQmb30SLJbUYz0CM23RMvnPSlgWL8TiBSMTL8HSMt.CLJL0PSESOvnvTCQTL8.iKv.iBDMTL8TCLt.CLJPzPSESOvn.QCQTL8.iKv.iBFMUL8.iKv.iBFM0TwzCLJXzTDESOv3BLvn.TSESO0.iKv.iBPM0TwzCLJ.0TDESOv3BLvn.TSYTL8TCLt.CLJfTZDESO1jiK0.iBL8FQwzSLv.iKv.iBMYFdxzSMJL0PxziL03BLvnvTCMkL8.iBSMDQxzCLt.CLJPzPxzSMv3BLvn.QCMkL8.iBDMDQxzCLt.CLJXzTxzCLt.CLJXzTSISOvnfQSQjL8.iKv.iBPMkL8TCLt.CLJ.0TSISOvn.TSQjL8.iKv.iBPMkQxzSMv3BLvn.RoQjL8.iKv.iBL8FQxzyM23BLvnfQB0DY8DiBDkWSuESOvn.Q4A0TwzCLJPTdCQUL8.iBDkGSqESOvn.Q4QEZwzSKwHiKv.iBDk2PvESO03BLvn.Q4EDcwzyLt.CLJPTdRUVL8biKv.iBDk2S0ESOv3BLvn.Q40zaxzCLJPTdPMkL8.iBDk2PTISOvn.Q4wzZxzCLJPTdTglL8zRLx3BLvn.Q4MDbxzSMt.CLJPTdAQmL8LiKv.iBDkmTkISO23BLvn.Q48TcxzCLt.CLJLxXs0SSF0zXwnPRtAWOxnfQr81c8DiBTI1bk0CLJLUdtMVL8jiBRQ2a8DCLv3BLvnfTTMkbi0CLJHEUM8FY8.iKv.iBMMUO0.CLt.CLJzzTSI2X8.iBMMUSuQVOv3BLvn.U04VY8.iKv.iBT0zTxMVOvn.UMQDbz0CLt.CLJXjPwzCLt.CLJXjPxzCLt.CLJXjPyzCLt.CLJXjPzzCLt.CLJ.UXt0SKw.CLt.CLJ.UXtM0X8.iBPElaDQWOv3BLvnvS0QWOw.CLt.CLJ7TczM0X8.iBOUGcDQWOv3BLvnfQTkGb8XiBCUGc8DSMv3BLvnfTkMWOv3BLvnfQSESOvnfQMESOv3BLvnvRkkmQuwVOv3BLvnvHi0VOMYTSiIiBI4Fb8LiBFw1a20SLJPkXyUVOvnvT441XwziLJHEcu0SLv.iKv.iBRQ0TxMVOvnfTT0zaj0CLt.CLJzzT8TCLv3BLvnPSSMkbi0CLJzzTM8FY8.iKv.iBTUmak0CLt.CLJPUSSI2X8.iBT0DQvQWOv3BLvnfQBESOv3BLvnfQBISOv3BLvnfQBMSOv3BLvnfQBQSOv3BLvn.Tg4VOw.CLt.CLJ.UXtM0X8.iBPElaDQWOv3BLvnvS0QWOw.CLt.CLJ7TczM0X8.iBOUGcDQWOv3BLvnfQTkGb8biBCUGc8LCLt.CLJHUYy0CLt.CLJXzTwzCLJXTSwzCLt.CLJrTY4Yzar0CLt.CLJLxXs0SSF0zXynPRtAWOxnfQr81c8DiBTI1bk0CLJLUdtMVL8DCLJHEcu0SLv.iKv.iBRQ0TxMVOvnfTT0zaj0CLt.CLJzzT8TCLv3BLvnPSSMkbi0CLJzzTM8FY8.iKv.iBTUmak0CLt.CLJPUSSI2X8.iBT0DQvQWOv3BLvnfQBESOv3BLvnfQBISOv3BLvnfQBMSOv3BLvnfQBQSOv3BLvn.Tg4VOsDCLv3BLvn.Tg41Ti0CLJ.UXtQDc8.iKv.iBOUGc8TCLt.CLJ7TczM0X8.iBOUGcDQWOv3BLvnfQTkGb8XiBCUGc8DCL13BLvnfTkMWOv3BLvnfQSESOvnfQMESOv3BLvnvRkkmQuwVOv3BLvnvHi0VOMYTSiQiBI4Fb8LiBFw1a20SLJPkXyUVOvnvT441XwzyLJHEcu0SLv.iKv.iBRQ0TxMVOvnfTT0zaj0CLt.CLJzzT8TCLv3BLvnPSSMkbi0CLJzzTM8FY8.iKv.iBTUmak0CLt.CLJPUSSI2X8.iBT0DQvQWOv3BLvnfQBESOv3BLvnfQBISOv3BLvnfQBMSOv3BLvnfQBQSOv3BLvn.Tg4VOw.CLt.CLJ.UXtM0X8.iBPElaDQWOv3BLvnvS0QWO0.iKv.iBOUGcSMVOvnvS0QGQz0CLt.CLJXDU4AWO2nvP0QWOy.iKv.iBRU1b8.iKv.iBFMUL8.iBF0TL8.iKv.iBKUVdF8Fa8.iKv.iBJnvKu.xTkMFco8lafX1axARcmwVdfL1asAmbkM2bkQFHhklagIWdfPTXzElBu7BHD8jSmPEHT8TUCgDHTgTRSofBjPBIjLiL3PiB+n1ZpolZpw1a5bFYmMVYtUlX5.GbnAWXgEVX5DVXgEVZgQFb5.2anAWXgEVX5DVXmEVXgEVX5DVXgEVZgUVX5nPZgEVXgEVXgoSXhEVXgEVXgoSYgEVXgEVXgoSXgoSYioSYhoSYgoyXgoyZgoSagoCZgoiZjoCaooyagoSXioyaJHlNgIlNgYlNjElNg4lNlElNm0lNvElNgQlNhElNkklNkAmNmElNmIVHxETdAYSYscFbmQlVSEjL4EzLHg0SMUmBhYFSAUCQtYFYl4jcAI1as4VU1YTYu8TS0kFapoVRmc1bAEUP0bTYu8TS0QDTuslZqMGQC0FYQYWPX8TS0klYiovZpM1YmMWVtUFav8lZvMFZvETLGw1aj0FbiAGbpAGbvECQj41aqo1ZyQzPsQVT1ETdAIiQjsVatkzbG8Fbs0VRJTUPynDapkzbDMTajEkcFQ1Zs4VRyQkRroVRyczav0VaIMGRX8TS0sFbpolauQFaygDVO0TcToDapkzb4AGbynlBngEYmcVZyImdAciYlcUQRclZm81YnUjTmA2YucFZEUlYmQ1YocFbmYFZjM1amkFYigTPhYFSAUCQtYFYl4jcAofXu0laUYmQk81SMUWZrolZIc1YyImdAcSLxoWP2flXjc1XsIlZKoVYSY1ZsgFRm8FakwzTvMlZt81ag0lXnU1aJjlarIlZgEERiYFbogVYjcVTuAmUjYFZqQFYgolYh8VYpolVgkFbsY1XhslRpwVQnslZv4lZlIFZvY1aoolaqglBloDaqYFasAGaiolaDclaxEVYAECLMM1XggVPxETdAYiYlg1XnQVQWclYmQ1YrclaZc1awTzXtUDZlMlamk1YlovXucFYmA2YtEjLyHib3ETLyTib5EzMmU1Ylc1YZglYSgVYEgFYmQlVSclYAIiLzEjLDETLDEycAEiQDETLGQTPJDyRDIWPLETMzEzLzEjLDETLDEycAEiQDETLGQTPwrjdCETLVMTPwTzPAECTCETLDMTPwH0PAESVCETLHMTPwjlBgMTPwjVZCETLpE1PAEiZoMTPwXzPAEyZoMTPwvVXCETLJMTPwbzPAESaoMTPw3VXCETLtk1PAEyRCETLuk1PAoPLTMTPw.WZCEjLBETLgUlPAESXoITPwDVaBETLVITPwHVYBETLhklPAEiXsITPwTjPAEyXkITPwLVZBETLi0lPJDTLPITPwPVYBETLjklPAECYsITPwPjPAESYkITPwbkPAESYsITPwHkPAEiYkITPwXVZBETLl0lPAESVBETLmUlBBETLmklPAEyTBETLHITPwfVYBETLnklPAECZsITPwjVXBETLoMlPAESZkITPwj1YBETLoklPAESZqITPwjVaBoPPwj1aBETLpElPAEiZiITPwnVYBETLpclPAEiZoITPwn1ZBETLp0lPAEiZuITPwXjPAEyZiITPwrVYBETLqclPJDTLqklPAEyZqITPwrVaBETLq8lPAECagITPwv1XBETLrUlPAECamITPwnjPAECaqITPwvVaBETLr8lPAEyQBEjBwz1XBETLsUlPAESamITPwzVZBETLsslPAESasITPwz1aBETLtElPAEiaiITPw3VYBETLtclPAEiaoITPw31ZBoPPw3VaBETLt8lPAEyRBETLuMlPAEyakITPw71YBETLuklPAEyaqITPw7VaBETLu8lPAECUBETLvMlPAECbkITPJDCbmITPw.WZBETLvslPAECbsITPw.2aBIGTLETMzEzLUEjL4wTPx3TXkEjL0DGcwDzLwc2Zrs1ZusFYuEzLwEjBwb0PAcSb2EzMwETLFoWPzDWPwbjdAQSbAEyR5EDMwEjLCEzMwETLRMTP2DWPwfzPAcSbAESVCEzMwETLDMTP2nPbAECTCEzMwETLEMTP2DWPwX0PAcSbAESZgMTP2DWPwjVZCEzMwETLpE1PAcSbAEiZoMTP2DWPwXzPAcSbAEyZJj1PAcSbAECagMTP2DWPwnzPAcSbAEyQCEzMwETLsk1PAcSbAEiagMTP2DWPw3VZCEzMwETLKMTP2DWPw7VZCEjB2DWPwP0PAcSbAECboMTP2DWPwTibPwTP0PWPyTUPxjGSAIiSgUVPxTSbzESPyD2cqw1Zq81Zj8VPyDWPwb0PAovMwcWP2DWPwXjdAQSbAEyQ5EDMwETLKoWPzDWPxLTP2DWPwH0PAcSbAECRCEzMwETLYMTP2DWPwPzPAcSbAECTJLTP2DWPwTzPAcSbAEiUCEzMwETLoE1PAcSbAESZoMTP2DWPwnVXCEzMwETLpk1PAcSbAEiQCEzMwETLqk1PAciBwETLrE1PAcSbAEiRCEzMwETLGMTP2DWPwzVZCEzMwETLtE1PAcSbAEiaoMTP2DWPwrzPAcSbAEyaoMTP2DWPwn.UCEzMwETLvk1PAcSbAESMxgWPyPWPwHyMxgWPyPWPwHyMxgWPyPWPwHyMxgWPyPWPwHyM8DSMxDiLxn...7EDSTERf.UZtcFHP8lamARQig1akMG.H.vE.PB.o.PL.jC.9.vQ.vD.QUPTEXUAXUPWYjO.......f.A.........vC..................fFO."
+										"blob" : "6725.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3.WsEla0YVXiQWcxUlbTQVXzE1UyUmXzkGbkckckI2bo8laTQWdvUFVA0zWSQUPTUDUtEVakIQUHYFVOEAA7C..............dB....fPBO6L....A.........f..........L..........D.........PA.........X..........G..........B.........j..........J.........vB.........v..........M.........fC.........7..........P.........PD+.H......HwO.B......S7Cf.......E+.H......TA.........V.........vEACD......fA.........Y.........fF.........rA.........b.........PG.........3A.........e..........H.........DB.........h.........vH.AH......PB.........k.Df......fI.........bBP.B......n.........PJ.AH......nB.........qHjj.......KBYG......zhP9.......tDDx......vK..........iPHA......w.........fL.........LC.........zHDR......PM.........XiPHA......2Hzh.......NBgL......jSPHC......5.........vNBgD......vC.........8.........fO.........7iPHA.......A........PPBgD......HD.........CIjl.......QACD......TDPfB......FADP......vQ.AN......fD.........IELP......fR.AJ......rDP.A......LAD3......PS.........3jPHC......OA.........TCoO......DE.........RA........vT.........PE.........UA........fU.........bE.........XA........PVBiL......nE.........aIDx.......W.........zEP.C......dMjE......vW..........F.........gA........fXBgL......LF.........jMj9......PY.........XF.........mA.........Z.........jF.........pA........vZ.........vF.........sIDx......fa.........7lPHC......vA........Pb.AN......HWPvC......yA.........c.........TG.........1IDx......vc.........f2P5C......4A........fd.........rG.........7A........Pe.........3G.........+A.........f.........DnvHC......BB........vfBgD......PH.........EBDv......fgBQM......bH.........HB........Ph.........nnPHC......KB.........iCoO......zH.........NB........vi..........I.........QB........fj.........LI.........TB........PkBgL......XI.........WJDR.......l.........jIPfC......ZFD7......vl.........vI.........cB....fDMYTSx.A.RDVcsY1SQPAjunBPsUFcgofBAUGcn8lb5nvIUI2bffTYisVag4lafzBH00BZk4xXu01IJn.QkM2XxkFbzk1atoiBmPEZoMGHoMGHgABYuUmXrUFHPklamABTu41YfPVYrEVdt3hKMzvStUFHPAEQfj1bfXVXyQWYxARXtQFHlkFazUlbyAxcoQGZfDFHnk1YnAWXyMGKfPGZkAxazgVYxAxatUFHoMGHr81ckIGHg4FYfXVZrQWYxMGH2kFcnARXfv1a2AWXyMmKfbhBJT0bgcVY5nvIPUGcfbGZkIWY1UlbfDFHt8lbsEFafPVYrEVdfj1btchBJnxKJnvHA0TOMYTSxnvHVUlby0iLv.CL0nvHE4FYoEla8vVZzQGakovHt0VOwTiBiz1b831atUlBiz1b8zzajcEZrovHsMWOPkFcig1UJLRay0iPxUVXzglBiz1b8fEbxU1byovHsMWOGEFckovHsMWOKUVdF8FaJLRay0iUkw1aikFc4ovHsMWOAQ0a0MFZJLRay0SSSUzQwnvHsMWOMMUQGIiBiz1b8vjYuEiBiz1b8vjYuIiBiz1b8vjYuMiBiz1b8vjYuQiBi3lc8DiBizlc8bTXzUlBiLVa8zVXo4lBCM1Sv0SN23xL0nvHi0VOPMzaxUlBM0DUwziau4VY5D1byk1YtUFYJzTSSESOvnPSMQTL8.iKv.iBM0jUSESOvnPSMYEQwzCLt.CLJzTSTISOt8lakoSXyMWZm4VYjoPSMMkL8.iBM0DQxzCLt.CLJzTSVMkL8.iBM0jUDISOv3BLvnPSMQ0L831atUlNgM2boclakQlBM0zTyzCLJzTSDMSOv3BLvnPSMY0TyzCLJzTSVQzL8.iKv.iBM0DUzziau4VY5D1byk1YtUFYJzTSSQSOvnPSMQDM8.iKv.iBM0jUSQSOvnPSMYEQzzCLt.CLJLkPgMWY8PiBScWZtcVOv3BLvnvTTIWZm0SLJ.0Tu41Y8TiBPYzarQVOvn.TFkFak0SLJbjQowVY8HiBGM0XgwVY8.iBCgFSgkWOvnvT0ImbO0SLJHUY10yL3jCNJvTQD0CLt.CLJ.UPGUTOvn.TgcVYy8ja8.iBC8lbk4TOynvTrk1Xk0CMJTURe8Fb8DiBMkFYoETO0nPSoQVZP0iMJLxXs0SSoQVZJLBSF8TL8DiBivjQOISOwnvHLYzSyzSLJLBSF8DM8DiBM8FYk0CLJ.0axQWX8.iKv.iBPITOxn.TBQTOxnPSTUmaS0CLJzDU04lS8biBMQUctQUO3n.UxMGb8zRLxnfQTUma8.iKv.iBP8lbzI0Y8DCLv3BLvnfTN8Fck0CLJHkUkwVOvnvHi0VOMMUQGEiBT0VUt0SLJTja10SNJXUYr0CLt.CLJDDcq0CLt.CLJvDbz0CLt.CLJHUYr0CLt.CLJPkbocVOvnvHi0VOMMUQGIiBT0VUt0SLJTja10SLvnfUkwVOv3BLvnPPzsVOv3BLvn.SvQWOv3BLvnfTkwVOv3BLvn.Uxk1Y8.iBiLVa8vjQOEiBSkmai0CMJPkbocVOvnvUgYWY8.iBPg1bk0CLt.CLJHUXzUVOw.CLt.CLJDTav0SLv.iKv.iBSwVY20SLJ3zbzAWOwXiBSQGby0SLwnPUWYWOvn.QrkWOv3BLvn.QMMUL8.iBD0DQwzCLt.CLJXTSSESOvnfQMQTL8.iKv.iBiLVa8vjQOIiBSkmai0CMJPkbocVOvnvUgYWY8.iBPg1bk0CLt.CLJHUXzUVOw.CLt.CLJDTav0SLv.iKv.iBSwVY20SLJ3zbzAWOwXiBSQGby0SLxnPUWYWOvn.QrkWOv3BLvn.QMMUL8.iBD0DQwzCLt.CLJXTSSESOvnfQMQTL8.iKv.iBiLVa8vjQOMiBSkmai0CMJPkbocVOvnvUgYWY8.iBPg1bk0CLt.CLJHUXzUVOw.CLt.CLJDTav0SLv.iKv.iBSwVY20SLJ3zbzAWOwXiBSQGby0SLynPUWYWOvn.QrkWOv3BLvn.QMMUL8.iBD0DQwzCLt.CLJXTSSESOvnfQMQTL8.iKv.iBiLVa8vjQOQiBSkmai0CMJPkbocVOvnvUgYWY8.iBPg1bk0CLt.CLJHUXzUVOw.CLt.CLJDTav0SLv.iKv.iBSwVY20SLJ3zbzAWOwXiBSQGby0SLznPUWYWOvn.QrkWOv3BLvn.QMMUL8.iBD0DQwzCLt.CLJXTSSESOvnfQMQTL8.iKv.iBiLVa8zjQMIiBDIWd8byLt.CLJXjPM0iMw3RMvnPSzIGd8DiBWUFc8PyMtTCLJzjY3ESO0nvTCESOxTiKv.iBSMzTwzCLJL0PDESOv3BLvn.QCESO0.iKv.iBDMzTwzCLJPzPDESOv3BLvnfQSESOv3BLvnfQSMUL8.iBFMEQwzCLt.CLJ.0TwzSMv3BLvn.TSMUL8.iBPMEQwzCLt.CLJ.0TFESO0.iKv.iBHkFQwziM43RMvn.SuQTL8DCLv3BLvnPSlgmL8TiBSMjL8HSMt.CLJL0PSISOvnvTCQjL8.iKv.iBDMjL8TCLt.CLJPzPSISOvn.QCQjL8.iKv.iBFMkL8.iKv.iBFM0TxzCLJXzTDISOv3BLvn.TSISO0.iKv.iBPM0TxzCLJ.0TDISOv3BLvn.TSYjL8TCLt.CLJfTZDISOv3BLvn.SuQjL8byMt.CLJXjPMQVOwn.Q40zawzCLJPTdPMUL8.iBDk2PTESOvn.Q4wzZwzCLJPTdTgVL8zRLx3BLvn.Q4MDbwzSMt.CLJPTdAQWL8LiKv.iBDkmTkESO23BLvn.Q48TcwzCLt.CLJPTdM8lL8.iBDkGTSISOvn.Q4MDUxzCLJPTdLslL8.iBDkGUnISOsDiLt.CLJPTdCAmL8TiKv.iBDkWPzISOy3BLvn.Q4IUYxzyMt.CLJPTdOUmL8.iKv.iBiLVa8zjQMMVLJjjav0iLJXDaucWOwn.UhMWY8.iBSkmaiESO4nfTz8VOw.CLt.CLJHEUSI2X8.iBRQUSuQVOv3BLvnPSS0SMv.iKv.iBMM0TxMVOvnPSS0zaj0CLt.CLJPUctUVOv3BLvn.UMMkbi0CLJPUSDAGc8.iKv.iBFITL8.iKv.iBFIjL8.iKv.iBFIzL8.iKv.iBFIDM8.iKv.iBPEla8zRLv.iKv.iBPElaSMVOvn.Tg4FQz0CLt.CLJ7Tcz0SLv.iKv.iBOUGcSMVOvnvS0QGQz0CLt.CLJXDU4AWO1nvP0QWOwTCLt.CLJHUYy0CLt.CLJXzTwzCLJXTSwzCLt.CLJrTY4Yzar0CLt.CLJLxXs0SSF0zXxnPRtAWOynfQr81c8DiBTI1bk0CLJLUdtMVL8HiBRQ2a8DCLv3BLvnfTTMkbi0CLJHEUM8FY8.iKv.iBMMUO0.CLt.CLJzzTSI2X8.iBMMUSuQVOv3BLvn.U04VY8.iKv.iBT0zTxMVOvn.UMQDbz0CLt.CLJXjPwzCLt.CLJXjPxzCLt.CLJXjPyzCLt.CLJXjPzzCLt.CLJ.UXt0SLv.iKv.iBPElaSMVOvn.Tg4FQz0CLt.CLJ7Tcz0SLv.iKv.iBOUGcSMVOvnvS0QGQz0CLt.CLJXDU4AWO2nvP0QWOy.iKv.iBRU1b8.iKv.iBFMUL8.iBF0TL8.iKv.iBKUVdF8Fa8.iKv.iBiLVa8zjQMM1LJjjav0iLJXDaucWOwn.UhMWY8.iBSkmaiESOw.iBRQ2a8DCLv3BLvnfTTMkbi0CLJHEUM8FY8.iKv.iBMMUO0.CLt.CLJzzTSI2X8.iBMMUSuQVOv3BLvn.U04VY8.iKv.iBT0zTxMVOvn.UMQDbz0CLt.CLJXjPwzCLt.CLJXjPxzCLt.CLJXjPyzCLt.CLJXjPzzCLt.CLJ.UXt0SKw.CLt.CLJ.UXtM0X8.iBPElaDQWOv3BLvnvS0QWO0.iKv.iBOUGcSMVOvnvS0QGQz0CLt.CLJXDU4AWO1nvP0QWOw.iMt.CLJHUYy0CLt.CLJXzTwzCLJXTSwzCLt.CLJrTY4Yzar0CLt.CLJLxXs0SSF0zXznPRtAWOynfQr81c8DiBTI1bk0CLJLUdtMVL8LiBRQ2a8DCLv3BLvnfTTMkbi0CLJHEUM8FY8.iKv.iBMMUO0.CLt.CLJzzTSI2X8.iBMMUSuQVOv3BLvn.U04VY8.iKv.iBT0zTxMVOvn.UMQDbz0CLt.CLJXjPwzCLt.CLJXjPxzCLt.CLJXjPyzCLt.CLJXjPzzCLt.CLJ.UXt0SLv.iKv.iBPElaSMVOvn.Tg4FQz0CLt.CLJ7Tcz0SMv3BLvnvS0Q2Ti0CLJ7TczQDc8.iKv.iBFQUdv0yMJLTcz0yLv3BLvnfTkMWOv3BLvnfQSESOvnfQMESOv3BLvnvRkkmQuwVOv3BLvnfBJnfBu7BHSU1Xzk1atAhYuIGH0cFa4AxXu0FbxU1byUFYfHVZtElb4ABQgQWXJ7xKfPzSNcBUfP0SUMDRfPERIMkBJPBIjPxLxfCMJ7iZqolZpoFauoyYjc1Xk4VYhoCbvgFbgEVXgoSXgEVXoEFYvoCbugFbgEVXgoSXgcVXgEVXgoSXgEVXoEVYgoiBoEVXgEVXgElNgIVXgEVXgElNkEVXgEVXgElNgElNkMlNkIlNkElNiElNqElNsElNnElNpQlNrklNuElNgMlNuofX5DlX5DlY5PVX5Dla5XVX5bVa5.WX5DFY5HVX5TVZ5TFb5bVX5blXgHWP4EjMk01YvcFYZMUPxjWPyfDVO0TcJHlYLETMD4lYjYlS1EjXu0laUYmQk81SMUWZrolZIc1YyETTAUyQk81SMUGQP81Zps1bDMTajEkcAg0SMUWZlMlBqo1Xmc1bY4VYrA2apA2XnAWPwbDauQVavMFbvoFbvAWLDQlauslZqMGQC0FYQYWP4EjLFQ1Zs4VRyczav0VaIoPUAMiRroVRyQzPsQVT1YDYq0laIMGUJwlZIM2QuAWaskzbHg0SMU2ZvolZt8FYrMGRX8TS0QkRroVRykGbvMiZJfFVjc1YoMmb5EzMlY1UEI0Ypc1amgVQRcFbm81YnUTYlcFYmk1YvclYnQ1XucVZjMFRAIlYLETMD4lYjYlS1EjBh8VatUkcFU1aO0TcowlZpkzYmMmb5EzMwHmdAcCZhQ1Yi0lXpsjZkMkYq0FZHc1arUFSSA2Xp41auEVahgVYuoPZtwlXpEVTHMlYvkFZkQ1YQ8FbVQlYnsFYjElZlI1akolZZEVZv0lYiI1ZJoFaEg1ZpAmapYlXnAmYuklZtsFZJXlRrslYr0FbrMlZtQzYtIWXkETLvzzXvAmXAIWP4EjMlYFZigFYEc0YlcFYmw1Yto0YuESQi4VQnY1XtcVZmYlBi81YjcFbm4VPxLiLxgWPwLSMxoWP2bVYmY1YmoEZlMEZkUDZjcFYZM0YlEjLxPWPxPTPwPTL2ETLFQTPwbDQAoPLKQjbAwTP0PWPyPWPxPTPwPTL2ETLFQTPwbDQAEyR5MTPwX0PAESQCETLPMTPwPzPAEiTCETLYMTPwfzPAESZJD1PAESZoMTPwnVXCETLpk1PAEiQCETLqk1PAECagMTPwnzPAEyQCETLsk1PAEiagMTPw3VZCETLKMTPw7VZCEjBwP0PAECboMTPxHTPwDVYBETLgklPAESXsITPwXkPAEiXkITPwHVZBETLh0lPAESQBETLiUlPAEyXoITPwLVaBoPPw.kPAECYkITPwPVZBETLj0lPAECQBETLkUlPAEyUBETLk0lPAEiTBETLlUlPAEiYoITPwXVaBETLYITPwbVYJHTPwbVZBETLSITPwfjPAECZkITPwfVZBETLn0lPAESZgITPwj1XBETLoUlPAESZmITPwjVZBETLoslPAESZsIjBAESZuITPwnVXBETLpMlPAEiZkITPwn1YBETLpklPAEiZqITPwnVaBETLp8lPAEiQBETLqMlPAEyZkITPwr1YBoPPwrVZBETLqslPAEyZsITPwr1aBETLrElPAECaiITPwvVYBETLrclPAEiRBETLrslPAECasITPwv1aBETLGITPJDSaiITPwzVYBETLsclPAESaoITPwz1ZBETLs0lPAESauITPw3VXBETLtMlPAEiakITPw31YBETLtklPAEiaqIjBAEiasITPw31aBETLKITPw71XBETLuUlPAEyamITPw7VZBETLuslPAEyasITPw71aBETLTITPw.2XBETLvUlPAoPLvclPAECboITPw.2ZBETLv0lPAECbuIjbPwTP0PWPyTUPxjGSAIiSgUVPxTSbzESPyD2cqw1Zq81Zj8VPyDWPJDyUCEzMwcWP2DWPwXjdAQSbAEyQ5EDMwETLKoWPzDWPxLTP2DWPwH0PAcSbAECRCEzMwETLYMTP2DWPwPzPAciBwETLPMTP2DWPwTzPAcSbAEiUCEzMwETLoE1PAcSbAESZoMTP2DWPwnVXCEzMwETLpk1PAcSbAEiQCEzMwETLqoPZCEzMwETLrE1PAcSbAEiRCEzMwETLGMTP2DWPwzVZCEzMwETLtE1PAcSbAEiaoMTP2DWPwrzPAcSbAEyaoMTPJbSbAECUCEzMwETLvk1PAcSbAESMxAESAUCcAMSUAISdLEjLNEVYAISMwQWLAMSb2sFaqs1aqQ1aAMSbAEyUCEjB2D2cAcSbAEiQ5EDMwETLGoWPzDWPwrjdAQSbAIyPAcSbAEiTCEzMwETLHMTP2DWPwj0PAcSbAECQCEzMwETLPovPAcSbAESQCEzMwETLVMTP2DWPwjVXCEzMwETLok1PAcSbAEiZgMTP2DWPwnVZCEzMwETLFMTP2DWPwrVZCEzMJDWPwvVXCEzMwETLJMTP2DWPwbzPAcSbAESaoMTP2DWPw3VXCEzMwETLtk1PAcSbAEyRCEzMwETLuk1PAcSbAEiBTMTP2DWPw.WZCEzMwETL0HGdAMCcAEiL2HGdAMCcAEiL2HGdAMCcAEiL2HGdAMCcAEiL2zSL0HSLzPiB..vWPLQUHABTo41Yf.0atcFHEMFZuU1b.f..W..I.jB.w.PN.3C.GA.S.DUAQUfUEfUAckQ7........BD..........O...................Zb."
 									}
 ,
 									"fileref" : 									{
@@ -369,15 +635,15 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 548.0, 718.0, 48.0, 136.0 ],
+					"patching_rect" : [ 548.0, 731.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "mc.live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "mc.live.gain~",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "mc.live.gain~"
+							"parameter_longname" : "mc.live.gain~"
 						}
 
 					}
@@ -473,7 +739,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 548.0, 1015.0, 45.0, 45.0 ]
+					"patching_rect" : [ 1277.0, 813.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -638,7 +904,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 826.0, 307.0, 52.0, 22.0 ],
+					"patching_rect" : [ 737.0, 909.0, 52.0, 22.0 ],
 					"text" : "open $1"
 				}
 
@@ -665,14 +931,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 1 ],
+					"destination" : [ "obj-36", 1 ],
 					"source" : [ "obj-13", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
+					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -787,7 +1053,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 1,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
+					"order" : 0,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -853,6 +1128,34 @@
 					"destination" : [ "obj-50", 0 ],
 					"midpoints" : [ 787.5, 594.0, 787.5, 594.0 ],
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"source" : [ "obj-35", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 1 ],
+					"source" : [ "obj-36", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -949,6 +1252,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"source" : [ "obj-52", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-46", 2 ],
 					"source" : [ "obj-53", 0 ]
 				}
@@ -956,8 +1273,126 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-52", 1 ],
+					"source" : [ "obj-54", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 1 ],
+					"order" : 0,
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"order" : 1,
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"source" : [ "obj-56", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-56", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 1 ],
+					"source" : [ "obj-57", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 1 ],
+					"order" : 0,
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"order" : 1,
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"source" : [ "obj-59", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 1 ],
+					"source" : [ "obj-60", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 1 ],
+					"order" : 0,
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"order" : 1,
+					"source" : [ "obj-61", 0 ]
 				}
 
 			}
@@ -977,9 +1412,237 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-22" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
+			"obj-52::obj-115" : [ "active[2]", "Active", 0 ],
+			"obj-59::obj-113" : [ "pan[3]", "Pan", 0 ],
+			"obj-54::obj-30" : [ "qlist[3]", "Qlist", 0 ],
+			"obj-57::obj-36" : [ "hi[2]", "Hi", 0 ],
 			"obj-13" : [ "vst~", "vst~", 0 ],
+			"obj-59::obj-4" : [ "setname[6]", "Setname", 0 ],
+			"obj-60::obj-16" : [ "lofreq[3]", "LoFreq", 0 ],
+			"obj-35::obj-114" : [ "solo", "Solo", 0 ],
+			"obj-54::obj-9" : [ "active[3]", "Active", 0 ],
+			"obj-35::obj-113" : [ "pan", "Pan", 0 ],
+			"obj-59::obj-114" : [ "solo[3]", "Solo", 0 ],
+			"obj-57::obj-18" : [ "hifreq[2]", "HiFreq", 0 ],
+			"obj-36::obj-17" : [ "mid", "Mid", 0 ],
+			"obj-36::obj-4" : [ "setname[1]", "Setname", 0 ],
+			"obj-60::obj-28" : [ "init[3]", "Init", 0 ],
+			"obj-35::obj-115" : [ "active", "Active", 0 ],
+			"obj-52::obj-113" : [ "pan[1]", "Pan", 0 ],
+			"obj-52::obj-4" : [ "setname[2]", "Setname", 0 ],
+			"obj-54::obj-16" : [ "lofreq[1]", "LoFreq", 0 ],
+			"obj-56::obj-4" : [ "setname[4]", "Setname", 0 ],
+			"obj-59::obj-30" : [ "qlist[6]", "Qlist", 0 ],
+			"obj-60::obj-19" : [ "lo[3]", "Lo", 0 ],
+			"obj-52::obj-114" : [ "solo[1]", "Solo", 0 ],
+			"obj-56::obj-116" : [ "gain[2]", "Gain", 0 ],
+			"obj-36::obj-18" : [ "hifreq", "HiFreq", 0 ],
+			"obj-35::obj-30" : [ "qlist", "Qlist", 0 ],
+			"obj-35::obj-4" : [ "setname", "Setname", 0 ],
+			"obj-36::obj-30" : [ "qlist[1]", "Qlist", 0 ],
+			"obj-56::obj-115" : [ "active[4]", "Active", 0 ],
+			"obj-60::obj-17" : [ "mid[3]", "Mid", 0 ],
+			"obj-54::obj-28" : [ "init[1]", "Init", 0 ],
+			"obj-36::obj-9" : [ "active[1]", "Active", 0 ],
+			"obj-52::obj-30" : [ "qlist[2]", "Qlist", 0 ],
+			"obj-54::obj-19" : [ "lo[1]", "Lo", 0 ],
+			"obj-56::obj-30" : [ "qlist[4]", "Qlist", 0 ],
+			"obj-60::obj-36" : [ "hi[3]", "Hi", 0 ],
+			"obj-60::obj-4" : [ "setname[7]", "Setname", 0 ],
+			"obj-36::obj-36" : [ "hi", "Hi", 0 ],
+			"obj-57::obj-9" : [ "active[5]", "Active", 0 ],
+			"obj-60::obj-18" : [ "hifreq[3]", "HiFreq", 0 ],
+			"obj-22" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
+			"obj-54::obj-17" : [ "mid[1]", "Mid", 0 ],
+			"obj-36::obj-19" : [ "lo", "Lo", 0 ],
+			"obj-36::obj-28" : [ "init", "Init", 0 ],
+			"obj-56::obj-113" : [ "pan[2]", "Pan", 0 ],
+			"obj-52::obj-116" : [ "gain[1]", "Gain", 0 ],
+			"obj-54::obj-36" : [ "hi[1]", "Hi", 0 ],
+			"obj-57::obj-4" : [ "setname[5]", "Setname", 0 ],
+			"obj-57::obj-16" : [ "lofreq[2]", "LoFreq", 0 ],
+			"obj-59::obj-115" : [ "active[6]", "Active", 0 ],
+			"obj-60::obj-30" : [ "qlist[7]", "Qlist", 0 ],
+			"obj-56::obj-114" : [ "solo[2]", "Solo", 0 ],
+			"obj-54::obj-18" : [ "hifreq[1]", "HiFreq", 0 ],
+			"obj-59::obj-116" : [ "gain[3]", "Gain", 0 ],
+			"obj-57::obj-28" : [ "init[2]", "Init", 0 ],
+			"obj-35::obj-116" : [ "gain", "Gain", 0 ],
+			"obj-36::obj-16" : [ "lofreq", "LoFreq", 0 ],
+			"obj-54::obj-4" : [ "setname[3]", "Setname", 0 ],
+			"obj-57::obj-30" : [ "qlist[5]", "Qlist", 0 ],
+			"obj-57::obj-19" : [ "lo[2]", "Lo", 0 ],
+			"obj-60::obj-9" : [ "active[7]", "Active", 0 ],
+			"obj-34::obj-24" : [ "input", "Input", 0 ],
+			"obj-57::obj-17" : [ "mid[2]", "Mid", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-52::obj-115" : 				{
+					"parameter_longname" : "active[2]"
+				}
+,
+				"obj-59::obj-113" : 				{
+					"parameter_longname" : "pan[3]"
+				}
+,
+				"obj-54::obj-30" : 				{
+					"parameter_longname" : "qlist[3]"
+				}
+,
+				"obj-57::obj-36" : 				{
+					"parameter_longname" : "hi[2]"
+				}
+,
+				"obj-60::obj-16" : 				{
+					"parameter_longname" : "lofreq[3]"
+				}
+,
+				"obj-54::obj-9" : 				{
+					"parameter_longname" : "active[3]"
+				}
+,
+				"obj-59::obj-114" : 				{
+					"parameter_longname" : "solo[3]"
+				}
+,
+				"obj-57::obj-18" : 				{
+					"parameter_longname" : "hifreq[2]"
+				}
+,
+				"obj-60::obj-28" : 				{
+					"parameter_longname" : "init[3]"
+				}
+,
+				"obj-52::obj-113" : 				{
+					"parameter_longname" : "pan[1]"
+				}
+,
+				"obj-54::obj-16" : 				{
+					"parameter_longname" : "lofreq[1]"
+				}
+,
+				"obj-59::obj-30" : 				{
+					"parameter_longname" : "qlist[6]"
+				}
+,
+				"obj-60::obj-19" : 				{
+					"parameter_longname" : "lo[3]"
+				}
+,
+				"obj-52::obj-114" : 				{
+					"parameter_longname" : "solo[1]"
+				}
+,
+				"obj-56::obj-116" : 				{
+					"parameter_longname" : "gain[2]"
+				}
+,
+				"obj-36::obj-30" : 				{
+					"parameter_longname" : "qlist[1]"
+				}
+,
+				"obj-56::obj-115" : 				{
+					"parameter_longname" : "active[4]"
+				}
+,
+				"obj-60::obj-17" : 				{
+					"parameter_longname" : "mid[3]"
+				}
+,
+				"obj-54::obj-28" : 				{
+					"parameter_longname" : "init[1]"
+				}
+,
+				"obj-36::obj-9" : 				{
+					"parameter_longname" : "active[1]"
+				}
+,
+				"obj-52::obj-30" : 				{
+					"parameter_longname" : "qlist[2]"
+				}
+,
+				"obj-54::obj-19" : 				{
+					"parameter_longname" : "lo[1]"
+				}
+,
+				"obj-56::obj-30" : 				{
+					"parameter_longname" : "qlist[4]"
+				}
+,
+				"obj-60::obj-36" : 				{
+					"parameter_longname" : "hi[3]"
+				}
+,
+				"obj-57::obj-9" : 				{
+					"parameter_longname" : "active[5]"
+				}
+,
+				"obj-60::obj-18" : 				{
+					"parameter_longname" : "hifreq[3]"
+				}
+,
+				"obj-54::obj-17" : 				{
+					"parameter_longname" : "mid[1]"
+				}
+,
+				"obj-56::obj-113" : 				{
+					"parameter_longname" : "pan[2]"
+				}
+,
+				"obj-52::obj-116" : 				{
+					"parameter_longname" : "gain[1]"
+				}
+,
+				"obj-54::obj-36" : 				{
+					"parameter_longname" : "hi[1]"
+				}
+,
+				"obj-57::obj-16" : 				{
+					"parameter_longname" : "lofreq[2]"
+				}
+,
+				"obj-59::obj-115" : 				{
+					"parameter_longname" : "active[6]"
+				}
+,
+				"obj-60::obj-30" : 				{
+					"parameter_longname" : "qlist[7]"
+				}
+,
+				"obj-56::obj-114" : 				{
+					"parameter_longname" : "solo[2]"
+				}
+,
+				"obj-54::obj-18" : 				{
+					"parameter_longname" : "hifreq[1]"
+				}
+,
+				"obj-59::obj-116" : 				{
+					"parameter_longname" : "gain[3]"
+				}
+,
+				"obj-57::obj-28" : 				{
+					"parameter_longname" : "init[2]"
+				}
+,
+				"obj-57::obj-30" : 				{
+					"parameter_longname" : "qlist[5]"
+				}
+,
+				"obj-57::obj-19" : 				{
+					"parameter_longname" : "lo[2]"
+				}
+,
+				"obj-60::obj-9" : 				{
+					"parameter_longname" : "active[7]"
+				}
+,
+				"obj-57::obj-17" : 				{
+					"parameter_longname" : "mid[2]"
+				}
 
 			}
 
@@ -992,8 +1655,52 @@
 				"type" : "mx@s",
 				"implicit" : 1
 			}
+, 			{
+				"name" : "AudioInput.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/AudioMix/patchers",
+				"patcherrelativepath" : "../../../../../Max 8/Packages/AudioMix/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AudioEQ.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/AudioMix/patchers",
+				"patcherrelativepath" : "../../../../../Max 8/Packages/AudioMix/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AudioMix.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/AudioMix/patchers",
+				"patcherrelativepath" : "../../../../../Max 8/Packages/AudioMix/patchers",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"styles" : [ 			{
+				"name" : "Audiomix",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39
+					}
+
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "Max 12 Regular",
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
 	}
 
 }

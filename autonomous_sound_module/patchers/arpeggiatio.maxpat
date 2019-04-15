@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 249.0, 205.0, 1254.0, 908.0 ],
+		"rect" : [ 280.0, 134.0, 1254.0, 908.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -283,7 +283,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u879002035"
+									"varname" : "u416001095"
 								}
 
 							}
@@ -1992,7 +1992,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u103002034"
+									"varname" : "u298001094"
 								}
 
 							}
@@ -9609,7 +9609,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u780002032"
+									"varname" : "u452001092"
 								}
 
 							}
@@ -13645,16 +13645,16 @@
 										"CV2" : [ 22.834645669291355 ],
 										"CV3" : [ 0.0 ],
 										"Fatness" : [ 0.0 ],
-										"Freq" : [ 261.625565410470585 ],
+										"Freq" : [ 664.070100974263141 ],
 										"FreqMode" : [ 1.0 ],
 										"Linear" : [ 3.149606299212599 ],
 										"Mute" : [ 0.0 ],
-										"Offset[2]" : [ 0.0 ],
+										"Offset[2]" : [ 16.12598425196849 ],
 										"WaveformCloud" : [ 0.0 ]
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u012002031"
+									"varname" : "u046001091"
 								}
 
 							}
@@ -14337,7 +14337,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u697002030"
+									"varname" : "u835001090"
 								}
 
 							}
@@ -17244,7 +17244,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u234002029"
+									"varname" : "u079001089"
 								}
 
 							}
@@ -18264,7 +18264,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u132002028"
+									"varname" : "u664001088"
 								}
 
 							}
@@ -19406,7 +19406,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u808002027"
+									"varname" : "u185001087"
 								}
 
 							}
@@ -20321,107 +20321,107 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-6::obj-75" : [ "Shape[1]", "Shape", 0 ],
-			"obj-27::obj-45" : [ "Attack[1]", "Attack", 0 ],
+			"obj-6::obj-88" : [ "Time Mode[1]", "Time Mode", 1 ],
+			"obj-73::obj-20" : [ "Freq[1]", "Freq", 0 ],
 			"obj-6::obj-81" : [ "Phase-Inversion[1]", "Phase-Inversion", 1 ],
-			"obj-5::obj-75" : [ "Shape", "Shape", 0 ],
-			"obj-19::obj-331" : [ "WaveformCloud", "Waveform", 0 ],
-			"obj-22::obj-33" : [ "Quadrants", "Quadrants", 0 ],
+			"obj-8::obj-71" : [ "notes", "notes", 1 ],
+			"obj-27::obj-30" : [ "Hold[1]", "Hold", 0 ],
+			"obj-27::obj-20" : [ "mute[1]", "mute", 0 ],
+			"obj-15::obj-37" : [ "Mute[2]", "Mute", 0 ],
+			"obj-15::obj-70" : [ "MuteCh4", "MuteCh4", 0 ],
+			"obj-8::obj-105" : [ "rounding", "rounding", 0 ],
+			"obj-15::obj-33" : [ "4", "4", 0 ],
+			"obj-18::obj-55" : [ "Bypass", "Bypass", 0 ],
+			"obj-5::obj-144" : [ "Phase", "Phase", 0 ],
+			"obj-22::obj-80" : [ "Response", "Response", 0 ],
 			"obj-10::obj-18" : [ "Decay", "Decay", 0 ],
-			"obj-19::obj-20" : [ "Mute[3]", "Mute", 0 ],
-			"obj-27::obj-18" : [ "Decay[1]", "Decay", 0 ],
+			"obj-6::obj-89" : [ "SyncRate[1]", "Rate", 0 ],
+			"obj-15::obj-64" : [ "MuteCh3", "MuteCh3", 0 ],
 			"obj-21" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-19::obj-46" : [ "Offset", "Offset", 0 ],
+			"obj-6::obj-94" : [ "Re-Trigger[1]", "Re-Trigger", 0 ],
+			"obj-3::obj-20" : [ "RangeSwitch", "RangeSwitch", 0 ],
+			"obj-19::obj-106" : [ "CV3", "CV3", 0 ],
+			"obj-73::obj-63" : [ "CV3[1]", "CV3", 0 ],
+			"obj-5::obj-81" : [ "Phase-Inversion", "Phase-Inversion", 1 ],
+			"obj-73::obj-95" : [ "ResCV", "CV", 0 ],
+			"obj-5::obj-88" : [ "Time Mode", "Time Mode", 1 ],
+			"obj-5::obj-12" : [ "Mute", "Mute", 0 ],
+			"obj-15::obj-32" : [ "2", "2", 0 ],
+			"obj-19::obj-45" : [ "TimeMode", "TimeMode", 1 ],
+			"obj-5::obj-94" : [ "Re-Trigger", "Re-Trigger", 0 ],
+			"obj-6::obj-12" : [ "Mute[1]", "Mute", 0 ],
+			"obj-73::obj-54" : [ "CV1", "CV1", 0 ],
+			"obj-27::obj-45" : [ "Attack[1]", "Attack", 0 ],
+			"obj-8::obj-14::obj-2" : [ "pastebang", "pastebang", 0 ],
+			"obj-10::obj-20" : [ "mute[4]", "mute", 0 ],
+			"obj-5::obj-89" : [ "SyncRate", "Rate", 0 ],
+			"obj-19::obj-51" : [ "Fatness", "Fatness", 0 ],
 			"obj-8::obj-100" : [ "score", "score", 0 ],
 			"obj-73::obj-4" : [ "Offset[1]", "Offset", 0 ],
-			"obj-22::obj-55" : [ "Bypass[1]", "Bypass", 0 ],
-			"obj-19::obj-106" : [ "CV3", "CV3", 0 ],
-			"obj-73::obj-95" : [ "ResCV", "CV", 0 ],
-			"obj-6::obj-144" : [ "Phase[1]", "Phase", 0 ],
-			"obj-19::obj-107" : [ "Linear", "Linear", 0 ],
-			"obj-5::obj-74" : [ "Rate", "Rate", 0 ],
-			"obj-15::obj-58" : [ "MuteCh2", "MuteCh2", 0 ],
-			"obj-15::obj-29" : [ "3", "3", 0 ],
-			"obj-8::obj-12" : [ "bypass", "bypass", 0 ],
-			"obj-19::obj-45" : [ "TimeMode", "TimeMode", 1 ],
-			"obj-6::obj-94" : [ "Re-Trigger[1]", "Re-Trigger", 0 ],
-			"obj-8::obj-14::obj-2" : [ "pastebang", "pastebang", 0 ],
-			"obj-5::obj-144" : [ "Phase", "Phase", 0 ],
-			"obj-6::obj-88" : [ "Time Mode[1]", "Time Mode", 1 ],
-			"obj-18::obj-55" : [ "Bypass", "Bypass", 0 ],
-			"obj-22::obj-80" : [ "Response", "Response", 0 ],
+			"obj-19::obj-20" : [ "Mute[3]", "Mute", 0 ],
 			"obj-10::obj-30" : [ "Hold", "Hold", 0 ],
-			"obj-73::obj-54" : [ "CV1", "CV1", 0 ],
-			"obj-15::obj-49" : [ "MuteCh1", "MuteCh1", 0 ],
-			"obj-10::obj-20" : [ "mute[4]", "mute", 0 ],
-			"obj-15::obj-39" : [ "1", "1", 0 ],
-			"obj-73::obj-23" : [ "CV2[1]", "CV2", 0 ],
-			"obj-27::obj-20" : [ "mute[1]", "mute", 0 ],
-			"obj-73::obj-55" : [ "power", "power", 0 ],
-			"obj-19::obj-24" : [ "Freq", "Freq", 0 ],
-			"obj-6::obj-12" : [ "Mute[1]", "Mute", 0 ],
-			"obj-15::obj-37" : [ "Mute[2]", "Mute", 0 ],
-			"obj-6::obj-89" : [ "SyncRate[1]", "Rate", 0 ],
-			"obj-5::obj-12" : [ "Mute", "Mute", 0 ],
-			"obj-5::obj-81" : [ "Phase-Inversion", "Phase-Inversion", 1 ],
-			"obj-10::obj-45" : [ "Attack", "Attack", 0 ],
-			"obj-8::obj-71" : [ "notes", "notes", 1 ],
-			"obj-73::obj-63" : [ "CV3[1]", "CV3", 0 ],
-			"obj-15::obj-70" : [ "MuteCh4", "MuteCh4", 0 ],
-			"obj-27::obj-30" : [ "Hold[1]", "Hold", 0 ],
-			"obj-15::obj-33" : [ "4", "4", 0 ],
-			"obj-8::obj-105" : [ "rounding", "rounding", 0 ],
-			"obj-73::obj-20" : [ "Freq[1]", "Freq", 0 ],
-			"obj-5::obj-88" : [ "Time Mode", "Time Mode", 1 ],
-			"obj-73::obj-28" : [ "Res", "Res", 0 ],
+			"obj-6::obj-75" : [ "Shape[1]", "Shape", 0 ],
 			"obj-6::obj-74" : [ "Rate[1]", "Rate", 0 ],
-			"obj-5::obj-94" : [ "Re-Trigger", "Re-Trigger", 0 ],
-			"obj-19::obj-51" : [ "Fatness", "Fatness", 0 ],
-			"obj-5::obj-89" : [ "SyncRate", "Rate", 0 ],
-			"obj-3::obj-20" : [ "RangeSwitch", "RangeSwitch", 0 ],
+			"obj-19::obj-24" : [ "Freq", "Freq", 0 ],
+			"obj-15::obj-58" : [ "MuteCh2", "MuteCh2", 0 ],
+			"obj-8::obj-12" : [ "bypass", "bypass", 0 ],
+			"obj-15::obj-29" : [ "3", "3", 0 ],
+			"obj-19::obj-331" : [ "WaveformCloud", "Waveform", 0 ],
+			"obj-19::obj-46" : [ "Offset", "Offset", 0 ],
+			"obj-22::obj-33" : [ "Quadrants", "Quadrants", 0 ],
+			"obj-10::obj-45" : [ "Attack", "Attack", 0 ],
+			"obj-6::obj-144" : [ "Phase[1]", "Phase", 0 ],
 			"obj-19::obj-129" : [ "CV2", "CV2", 0 ],
-			"obj-15::obj-32" : [ "2", "2", 0 ],
-			"obj-15::obj-64" : [ "MuteCh3", "MuteCh3", 0 ],
+			"obj-5::obj-74" : [ "Rate", "Rate", 0 ],
+			"obj-15::obj-49" : [ "MuteCh1", "MuteCh1", 0 ],
+			"obj-73::obj-28" : [ "Res", "Res", 0 ],
+			"obj-27::obj-18" : [ "Decay[1]", "Decay", 0 ],
+			"obj-5::obj-75" : [ "Shape", "Shape", 0 ],
+			"obj-15::obj-39" : [ "1", "1", 0 ],
+			"obj-19::obj-107" : [ "Linear", "Linear", 0 ],
+			"obj-73::obj-23" : [ "CV2[1]", "CV2", 0 ],
+			"obj-73::obj-55" : [ "power", "power", 0 ],
 			"obj-73::obj-22" : [ "TimeMode[1]", "TimeMode", 1 ],
+			"obj-22::obj-55" : [ "Bypass[1]", "Bypass", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-6::obj-75" : 				{
-					"parameter_longname" : "Shape[1]"
+				"obj-6::obj-88" : 				{
+					"parameter_longname" : "Time Mode[1]"
 				}
 ,
 				"obj-6::obj-81" : 				{
 					"parameter_longname" : "Phase-Inversion[1]"
 				}
 ,
-				"obj-22::obj-55" : 				{
-					"parameter_longname" : "Bypass[1]"
-				}
-,
-				"obj-6::obj-144" : 				{
-					"parameter_longname" : "Phase[1]"
+				"obj-6::obj-89" : 				{
+					"parameter_longname" : "SyncRate[1]"
 				}
 ,
 				"obj-6::obj-94" : 				{
 					"parameter_longname" : "Re-Trigger[1]"
 				}
 ,
-				"obj-6::obj-88" : 				{
-					"parameter_longname" : "Time Mode[1]"
-				}
-,
 				"obj-6::obj-12" : 				{
 					"parameter_longname" : "Mute[1]"
 				}
 ,
-				"obj-6::obj-89" : 				{
-					"parameter_longname" : "SyncRate[1]"
+				"obj-6::obj-75" : 				{
+					"parameter_longname" : "Shape[1]"
 				}
 ,
 				"obj-6::obj-74" : 				{
 					"parameter_longname" : "Rate[1]"
+				}
+,
+				"obj-6::obj-144" : 				{
+					"parameter_longname" : "Phase[1]"
+				}
+,
+				"obj-22::obj-55" : 				{
+					"parameter_longname" : "Bypass[1]"
 				}
 
 			}

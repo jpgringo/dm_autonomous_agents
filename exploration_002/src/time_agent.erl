@@ -1,7 +1,7 @@
 -module(time_agent).
 
 %% API
--export([go/1]).
+-export([start/1, init/1]).
 
 get_random_interval(Range) ->
   {MinInterval, MaxInterval} = Range,
@@ -13,25 +13,34 @@ run_timer(Target) ->
   io:fwrite("~w - timer ~w: interval is ~p~n", [self(), T, Interval]),
   timer:start().
 
-listen(UpstreamProcess) ->
+start(Args) ->
+  io:fwrite("starting time_agent... ~n"),
+  spawn(time_agent, init, [Args]).
+
+init(Args) ->
+  io:fwrite("initing time_agent...~n"),
+  T = run_timer(self()),
+  State = #{caller=>maps:get(caller, Args), timer=>T},
+  loop(State).
+
+loop(State) ->
+  io:fwrite("looping time_agent... ~n"),
+  UpstreamProcess = maps:get(caller, State),
   receive
     fire ->
       io:fwrite("will send to upstream process: ~w~n", [UpstreamProcess]),
       UpstreamProcess ! sendNext,
-      run_timer(self()),
-      listen(UpstreamProcess);
+      T = run_timer(self()),
+      NewState = State,
+      maps:put(timer, T, NewState),
+      loop(NewState);
+    stop ->
+      io:fwrite("why you not get called?~n"),
+      terminate(State);
     Other ->
       io:fwrite("received something else... ~w~n", [Other])
   end.
 
-go(Caller) ->
-  io:fwrite("time agent ~p has been started by agent ~p~n", [self(), Caller]),
-  run_timer(self()),
-  listen(Caller).
-%%  receive
-%%    fire ->
-%%      Caller ! sendNext,
-%%      run_timer();
-%%    Other ->
-%%      io:fwrite("received something else... ~w~n", [Other])
-%%  end.
+terminate(State) ->
+  io:fwrite("terminating time_agent...~n"),
+  io:fwrite("timer is ~w~n", [maps:get(timer, State)]).

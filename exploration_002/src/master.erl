@@ -10,7 +10,7 @@
 -author("rick").
 
 %% API
--export([start/0, init/1]).
+-export([start/0, start/1, init/1]).
 
 defaultServerPort() ->
   8981.
@@ -41,16 +41,19 @@ formatOscMessage(Msg) ->
 
 
 sendMessage(Socket, Key, Value) ->
-  if is_float(Value) ->
+  io:fwrite("master:sendMessage(~w,~w,~w)~n", [Socket, Key, Value]),
+  if is_number(Value) ->
     PitchString = list_to_binary(io_lib:format("~.6f", [Value * 1.0])), %io_lib:format("/pitch/"),
     OscMsg = formatOscMessage(<<"/pitch/", PitchString/binary>>),
     gen_udp:send(Socket, {127, 0, 0, 1}, getTargetPort(), OscMsg)
   end.
 
-
 start() ->
-  io:fwrite("starting~n"),
-  spawn(master, init, [default]).
+  start([]).
+
+start(Args) ->
+  io:fwrite("starting master (~w)...~n", [Args]),
+  spawn(master, init, [Args]).
 
 init(Args) ->
   io:fwrite("initing~n"),
@@ -61,10 +64,23 @@ init(Args) ->
       unregister(master_process),
       register(master_process, self())
   end,
-  Pid = spawn(pitch_agent, go, [self()]),
+  PitchAgentArgs = getPitchAgentArgs(Args),
+  Pid = spawn_link(pitch_agent, start, [PitchAgentArgs]),
   Socket = createServer(),
-  State = #{osc_server=>Socket},
+  State = #{osc_server=>Socket, child_process=>Pid},
   loop(State).
+
+getPitchAgentArgs(Args) ->
+  PitchSetMode = lists:any(fun(X) -> X == pitch_set end, Args),
+  PitchAgentArgs = #{caller=>self()},
+  if PitchSetMode == true ->
+    io:fwrite("this~n"),
+    CompleteArgs = maps:put(mode, pitch_set, PitchAgentArgs);
+    true ->
+      io:fwrite("the other thing~n"),
+      CompleteArgs = maps:put(mode, pitch_range, PitchAgentArgs)
+  end,
+  CompleteArgs.
 
 loop(State) ->
   io:fwrite("looping~n"),
@@ -86,5 +102,5 @@ loop(State) ->
   end.
 
 terminate(State) ->
-  io:fwrite("terminating~n").
-
+  io:fwrite("terminating master~n"),
+  maps:get(child_process, State) ! stop.
